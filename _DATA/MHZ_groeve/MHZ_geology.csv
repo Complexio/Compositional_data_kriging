@@ -1,0 +1,786 @@
+hole_id;depth_from;depth_to;description_flemish;description_english;litho;color;color_simple;organic_matter;code
+LBU_03_01;0;1.3;Grind, matig grof, zwak,zandig, grijs;Gravel , moderately coarse , weak, sandy , gray;gravel;gray;gray;;0
+LBU_03_01;1.3;2;zand, matig fljn, zwak,siltig, geelbruin;sand , fine moderate , weak, silty , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_03_01;2;2.9;zand, matig fljn, zwak,siltig, bruingrijs;sand , fine moderate , weak, silty , brown gray;sand;brown gray;gray brown;;0
+LBU_03_01;2.9;7;zand, zeer fijn, zwak,si!tig, grijsbruin,  merkasiet;sand , very fine , weak, si ! tig , gray-brown , merkasiet;sand;brown gray;gray brown;;0
+LBU_03_01;7;10;zand, matig fljn, zwak, siltig, roodbruin;sand , fine moderate , weak, silty , brown;sand;brown;brown;;0
+LBU_03_01;10;12.25;zand, zeer fijn. Zwak, siltig, grijsbruin;sand , very fine . Weak, silty , gray-brown;sand;brown gray;gray brown;;0
+LBU_03_01;12.25;17.5;zand, zeer fijn. Zwak, siltig, grijs;sand , very fine . Weak, silty , gray;sand;gray;gray;;0
+LBU_03_01;17.5;18.5;zand, zeer fijn. Zwak, siltig, grijs;sand , very fine . Weak, silty , gray;sand;gray;gray;;0
+LBU_03_01;18.5;22.5;zand, matig fijn, zwak,siltig, grijsbruin;sand , finely , weak, silty , gray-brown;sand;brown gray;gray brown;;0
+LBU_03_01;22.5;32;zand, matig fjin, zwak siltig, resten hout, donkergrijs;sand , matigfjin weak silty , wood residues , dark gray;sand;dark gray;dark gray;moderate wood;0
+LBU_03_02;0;0.75;Grind, matig grof, zwak,zandig, grijs;Gravel , moderately coarse , weak, sandy , gray;gravel;gray;gray;;0
+LBU_03_02;0.75;2;zand, matig fljn, zwak, siltig, grijsgroen;sand , fine moderate , weak, silty , gray-green;sand;gray green;gray green;;0
+LBU_03_02;2;8.5;zand, zeer fljn, zwak,siltig, grijs;sand, very fine , weak, silty , gray;sand;gray;gray;;0
+LBU_03_02;8.5;12;zand, zeer fljn, zwak,siltig, geelbruin;sand, very fine , weak, silty , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_03_02;12;17;zand, zeer fljn, zwak, siltig, grijsgroen;sand, very fine , weak, silty , gray-green;sand;gray green;gray green;;0
+LBU_03_02;17;18.5;zand, matig fijn, zwak,siltig, lichtbruin;sand , finely , weak, silty , light brown;sand;light brown;light brown;;0
+LBU_03_02;18.5;31;zand, matig fijn, zwak siltig, donkerbruin;sand , finely weak silty , dark brown;sand;dark brown;dark brown;;0
+LBU_05_01;0;0.8;Zand, matig fijn, zwak siltig, zwak leemhoudend, bruinrood;Sand , moderately fine, silty weak weak loamy , brown red;sand;brown red;red brown;;0
+LBU_05_01;0.8;1.4;Leem, sterk zandig, zwak grindig,bruinrood;Loam , sandy strong , weak gravelly , brown red;loam;brown red;red brown;;0
+LBU_05_01;1.4;2.8;Leem, sterk zandig, zwak grindig,bruinrood;Loam , sandy strong , weak gravelly , brown red;loam;brown red;red brown;;0
+LBU_05_01;2.8;4.6;Zand, matig fijn, zwak siltig, zwak grindig, zwak leemhoudend,bruinrood;Sand , finely weak silty , gravelly weak weak loamy , brown red;sand;brown red;red brown;;0
+LBU_05_01;4.6;5.3;Zand, matig fijn, zwak siltig, sterk grindig, grijs;Sand , moderately fine, silty weak , strong gravelly , gray;sand;gray;gray;;0
+LBU_05_01;5.3;6;Zand, matig fijn, zwak siltig, matig grindig, beige;Sand , finely weak silty , moderately gravelly , beige;sand;beige;beige;;0
+LBU_05_01;6;9;Zand, matig fijn, zwak siltig, beige;Sand , finely weak silty , beige;sand;beige;beige;;0
+LBU_05_01;9;12.4;Zand, matig fijn, zwak siltig, sterk rietrestenhoudend, ijzerhoudend, roodbruin;Sand , moderately fine, silty weak , reeds remnants , ferruginous , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_01;12.4;15;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_01;15;19.1;Zand, zeer fijn, zwak siltig, beige;Sand, very fine, silty weak , beige;sand;beige;beige;;0
+LBU_05_01;19.1;23.4;Zand, zeer fijn, zwak siltig, zwak humeus, bruin;Sand, very fine, silty, weak , weak humic , brown;sand;brown;brown;weak humic;0
+LBU_05_01;23.4;23.6;volledig bruinkool, donkerbruin;fully lignite , dark;lignite;dark brown;dark brown;ful;0
+LBU_05_01;23.6;26.8;Zand, zeer fijn, zwak siltig, resten bruinkool, grijsbruin;Sand, very fine, silty weak , remains lignite , gray-brown;sand;gray brown;gray brown;weak peat;0
+LBU_05_01;26.8;32;Zand, zeer fijn, zwak siltig, matig humeus, grijsbruin;Sand, very fine, silty, weak , moderate humus , gray-brown;sand;gray brown;gray brown;moderate humic;0
+LBU_05_01;32;40;Zand, matig fijn, zwak siltig,grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_01;40;62;Zand, matig fijn, zwak siltig,grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_01;62;64;Zand, zeer fijn, zwak siltig, bruin;Sand, very fine, weak silty , brown;sand;brown;brown;;0
+LBU_05_02;0;0.8;Zand, matig fijn, zwak siltig, zwak grindig, bruinrood;Sand , moderately fine, silty weak , weak gravelly , brown red;sand;brown red;red brown;;0
+LBU_05_02;0.8;4.7;Zand, matig fijn, zwak siltig, matig grindig, zwak leemhoudend, bruinrood;Sand , finely weak silty , gravelly moderately weak loamy , brown red;sand;brown red;red brown;;0
+LBU_05_02;4.7;16;Zand, matig fijn, zwak siltig, matig roesthoudend, bruinrood;Sand , moderately fine, silty weak , moderate rust into brown red;sand;brown red;red brown;;0
+LBU_05_02;16;19.5;Zand, matig fijn, zwak siltig, beige;Sand , finely weak silty , beige;sand;beige;beige;;0
+LBU_05_02;19.5;30.2;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_02;30.2;31;Zand, zeer fijn, zwak siltig, matig humeus, bruin;Sand, very fine, silty, weakly , moderately humic , brown;sand;brown;brown;moderate humic;0
+LBU_05_02;31;40;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_02;40;50;Zand, zeer fijn, zwak siltig, grijsbruin;Sand, very fine, weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_03;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_03;0.1;1;Zand, matig fijn, zwak siltig, sterk grindig, bruin;Sand , finely weak silty , gravelly strong , brown;sand;brown;brown;;0
+LBU_05_03;1;4;Zand, matig fijn, zwak siltig, sterk grindig, uiterst leemhoudend, bruin;Sand , finely weak silty , gravelly strong , very loamy , brown;sand;brown;brown;;0
+LBU_05_03;4;5.2;Zand, matig fijn, zwak siltig, sterk grindig, matig roesthoudend, lichtbruin;Sand , finely weak silty , gravelly strong , moderate iron crust content, light brown;sand;light brown;light brown;;0
+LBU_05_03;5.2;8.5;Zand, zeer fijn, zwak siltig, zwak roesthoudend, lichtbruin;Sand, very fine, silty, weak , weak into rust , light brown;sand;light brown;light brown;;0
+LBU_05_03;8.5;9.85;Zand, zeer fijn, zwak siltig, beige;Sand, very fine, silty weak , beige;sand;beige;beige;;0
+LBU_05_03;9.85;9.9;Klei, zwak zandig, grijs;Clay , weakly sandy, gray;clay;gray;gray;;0
+LBU_05_03;9.9;16.5;Zand, zeer fijn, zwak siltig, wit;Sand, very fine, silty weak , white;sand;white;white;;0
+LBU_05_03;16.5;29.5;Zand, matig fijn, zwak siltig, matig humeus, bruin;Sand , finely weak silty , moderately humic , brown;sand;brown;brown;moderate humic;0
+LBU_05_03;29.5;42;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_05_03;42;50;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_04;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_04;0.1;4;Zand, matig fijn, zwak siltig, sterk leemhoudend, lichtbruin;Sand , moderately fine, silty weak , strong loamy , light;sand;light brown;light brown;;0
+LBU_05_04;4;12;Zand, matig fijn, zwak siltig, zwak grindig, roodbruin;Sand , finely weak silty , gravelly weak , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_04;12;16;Zand, matig fijn, zwak siltig, witbeige;Sand , finely weak silty , white-beige;sand;white beige;white beige;;0
+LBU_05_04;16;39;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_04;39;50;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_05;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_05;0.1;1.4;Zand, matig fijn, zwak siltig, sterk grindig, lichtbruin;Sand , finely weak silty , gravelly strong , light;sand;light brown;light brown;;0
+LBU_05_05;1.4;5;Zand, matig fijn, zwak siltig, sterk grindig, matig leemhoudend, roodbruin;Sand , finely weak silty , gravelly strong , moderately loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_05;5;8;Grind, zeer grof, zwak zandig, grijsbruin;Gravel , very coarse , light sandy, gray-brown;gravel;gray brown;gray brown;;0
+LBU_05_05;8;9;Zand, matig fijn, zwak siltig, matig grindig, lichtgrijs;Sand , finely weak silty , moderately gravelly , gray;sand;gray;gray;;0
+LBU_05_05;9;10;Zand, matig fijn, zwak siltig, zwak grindig, grijs;Sand , moderately fine, silty weak , weak gravelly , gray;sand;gray;gray;;0
+LBU_05_05;10;17;Zand, zeer fijn, zwak siltig, laagjes klei, grijswit;Sand, very fine, silty weak , layered clay , greyish;sand;greyish;gray;;0
+LBU_05_05;17;20;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_05;20;28;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_05;28;39;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_05;39;44;Zand, matig fijn, zwak siltig, brokken veen, grijsbruin;Sand , finely weak silty , chunks of peat , gray-brown;sand;gray brown;gray brown;chunks of peat;0
+LBU_05_05;44;46;Zand, matig fijn, zwak siltig, laagjes klei, grijsbruin;Sand , finely weak silty , clay layers , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_05;46;47;Zand, zeer fijn, zwak siltig, matig veenhoudend, donkerbruin;Sand, very fine, silty, weak, moderate peat content, dark brown;sand;dark brown;dark brown;moderate peat;0
+LBU_05_05;47;50;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_06;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_06;0.1;1.9;Zand, matig fijn, zwak siltig, matig grindig, zwak leemhoudend, bruin;Sand , finely weak silty , gravelly moderately weak loamy , brown;sand;brown;brown;;0
+LBU_05_06;1.9;3;Zand, matig fijn, zwak siltig, beigebruin;Sand , finely weak silty , brown beige;sand;brown beige;beige brown;;0
+LBU_05_06;3;6;Zand, matig fijn, zwak siltig, zwak grindig, roodbruin;Sand , finely weak silty , gravelly weak , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_06;6;7;Zand, zeer fijn, zwak siltig, zwak leemhoudend, roodbruin;Sand, very fine, silty weak weak loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_06;7;18;Zand, zeer fijn, zwak siltig, witbeige;Sand, very fine, silty weak , white-beige;sand;white beige;white beige;;0
+LBU_05_06;18;36.5;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_06;36.5;37.7;Klei, zwak zandig, grijs;Clay , light sandy, gray;clay;gray;gray;;0
+LBU_05_06;37.7;44;Zand, matig fijn, zwak siltig,grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_06;44;50;Zand, zeer fijn, zwak siltig, laagjes klei, roodbruin;Sand, very fine, weak silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_07;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_07;0.1;1;Zand, matig fijn, zwak siltig, sterk grindig, zwak leemhoudend, lichtbruin;Sand , finely weak silty , gravelly strong , light loamy , light;sand;light brown;light brown;;0
+LBU_05_07;1;2.7;Leem, sterk zandig, matig grindig, lichtbruin;Loam , very sandy, gravelly moderate , light;loam;light brown;light brown;;0
+LBU_05_07;2.7;12;Zand, matig fijn, zwak siltig, zwak roesthoudend, roodbruin;Sand , moderately fine, silty weak , weak rust into , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_07;12;17.8;Zand, zeer fijn, zwak siltig, beige;Sand, very fine, silty weak , beige;sand;beige;beige;;0
+LBU_05_07;17.8;19.8;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_07;19.8;20;Klei, zwak zandig, grijsbruin;Clay , light sandy, gray-brown;clay;gray brown;gray brown;;0
+LBU_05_07;20;32;Zand, matig fijn, zwak siltig, matig humeus, donkerbruin;Sand , moderately fine, silty weak , moderate humus , dark brown;sand;dark brown;dark brown;moderate humic;0
+LBU_05_07;32;40;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_07;40;48;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_07;48;50;Zand, matig fijn, zwak siltig, resten hout, bruin;Sand , finely weak silty , wood residues , brown;sand;brown;brown;moderate wood;0
+LBU_05_08;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_08;0.1;2.2;Zand, matig fijn, zwak siltig, sterk grindig, roodbruin;Sand , finely weak silty , gravelly strong , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_08;2.2;2.7;Zand, matig fijn, zwak siltig, zwak grindig, zwak roesthoudend, roodbruin;Sand , finely weak silty , gravelly weak , weak rust into , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_08;2.7;4.4;Zand, matig fijn, zwak siltig, zwak roesthoudend, roodbruin  ;Sand , moderately fine, silty weak , weak rust into , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_08;4.4;8;Zand, matig fijn, zwak siltig, zwak leemhoudend, beige;Sand , moderately fine, silty weak weak loamy , beige;sand;beige;beige;;0
+LBU_05_08;8;9;Zand, matig fijn, zwak siltig, brokken leem, beigebruin;Sand , finely weak silty , clay lumps , beige brown;sand;beige brown;beige brown;;0
+LBU_05_08;9;18;Zand, matig fijn, zwak siltig, zwak roesthoudend, roodbruin;Sand , moderately fine, silty weak , weak rust into , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_08;18;26;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_08;26;35;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_05_08;35;38;Zand, matig fijn, zwak siltig, laagjes klei, bruin;Sand , finely weak silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_08;38;50;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_09;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_09;0.1;2.5;Zand, matig fijn, zwak siltig, sterk grindig, zwak leemhoudend, bruin;Sand , finely weak silty , gravelly strong , light loamy , brown;sand;brown;brown;;0
+LBU_05_09;2.5;3;Leem, sterk zandig, matig grindig, grijsbruin;Loam , very sandy, moderately gravelly , gray-brown;loam;gray brown;gray brown;;0
+LBU_05_09;3;5;Leem, sterk zandig, matig grindig, bruin;Loam , very sandy, gravelly moderately, brown;loam;brown;brown;;0
+LBU_05_09;5;6.2;Grind, matig grof, zwak zandig, bruin;Gravel , moderately coarse , light sandy, brown;gravel;brown;brown;;0
+LBU_05_09;6.2;8;Zand, matig fijn, zwak siltig, matig grindig, grijsbruin;Sand , finely weak silty , moderately gravelly , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_09;8;15.5;Zand, matig fijn, zwak siltig, lichtgrijs;Sand , finely weak silty , light gray;sand;light gray;light gray;;0
+LBU_05_09;15.5;26;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_09;26;28;Zand, matig fijn, matig siltig, laagjes klei, bruin;Sand , finely , moderately silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_09;28;35;Zand, matig fijn, matig siltig, bruin;Sand , finely , moderately silty , brown;sand;brown;brown;;0
+LBU_05_09;35;39;Zand, matig fijn, zwak siltig, brokken veen, bruin;Sand , finely weak silty , chunks of peat , brown;sand;brown;brown;chunks of peat;0
+LBU_05_09;39;41;Zand, matig fijn, matig siltig, brokken veen, laagjes klei, grijsbruin;Sand , finely , moderately silty , chunks of peat , clay layers , gray-brown;sand;gray brown;gray brown;chunks of peat;0
+LBU_05_09;41;50;Zand, matig fijn, zwak siltig, brokken veen, grijs;Sand , finely weak silty , chunks of peat , gray;sand;gray;gray;chunks of peat;0
+LBU_05_10;0;0.3;Zand, matig fijn, zwak siltig, matig humeus, bruin;Sand , finely weak silty , moderately humic , brown;sand;brown;brown;moderate humic;0
+LBU_05_10;0.3;1.8;Zand, matig fijn, zwak siltig, zwak grindig, matig leemhoudend, lichtbruin;Sand , finely weak silty , gravelly weak , moderate loamy , light;sand;light brown;light brown;;0
+LBU_05_10;1.8;4;Zand, matig fijn, zwak siltig, geelbruin;Sand , finely weak silty , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_10;4;7;Zand, matig fijn, zwak siltig, zwak grindig, geelbruin;Sand , moderately fine, silty weak , weak gravelly , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_10;7;8;Zand, zeer fijn, zwak siltig, geelgrijs;Sand, very fine, weak silty , gray;sand;gray;gray;;0
+LBU_05_10;8;18.5;Zand, zeer fijn, zwak siltig, beigebruin;Sand, very fine, silty weak , beige brown;sand;beige brown;beige brown;;0
+LBU_05_10;18.5;27;Zand, zeer fijn, zwak siltig, bruin;Sand, very fine, weak silty , brown;sand;brown;brown;;0
+LBU_05_10;27;28;Zand, matig fijn, zwak siltig, laagjes klei, grijs;Sand , finely weak silty , clay layers , gray;sand;gray;gray;;0
+LBU_05_10;28;30.6;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_10;30.6;40;Zand, matig fijn, matig siltig, bruin;Sand , finely , moderately silty , brown;sand;brown;brown;;0
+LBU_05_10;40;41;Zand, matig fijn, matig siltig, laagjes klei, bruin;Sand , finely , moderately silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_10;41;53;Zand, matig fijn, matig siltig, grijs;Sand , finely , moderately silty , gray;sand;gray;gray;;0
+LBU_05_11;0;1.8;Zand, matig fijn, zwak siltig, matig humeus, matig grindig,bruin;Sand , moderately fine, silty weak , moderate humous , gravelly moderately brown;sand;brown;brown;moderate humic;0
+LBU_05_11;1.8;3;Zand, matig fijn, matig siltig, sterk grindig, geelbruin;Sand , finely , moderately silty , very gravelly , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_11;3;5.5;Grind, matig grof, matig zandig, matig leemhoudend, geel;Gravel , moderately coarse , moderately sandy, loamy moderate , yellow;gravel;yellow;yellow;;0
+LBU_05_11;5.5;8.6;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_11;8.6;14;Zand, matig fijn, matig siltig, laagjes leem, grijs;Sand , finely , moderately silty , clay layers , gray;sand;gray;gray;;0
+LBU_05_11;14;20;Zand, zeer fijn, matig siltig, lichtgrijs;Sand , very fine , moderately silty , light gray;sand;light gray;light gray;;0
+LBU_05_11;20;26;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_11;26;30;Zand, matig fijn, matig siltig, bruinkoolhoudend, bruin;Sand , finely , moderately silty , lignite content, brown;sand;brown;brown;moderate peat;0
+LBU_05_11;30;40.5;Zand, zeer fijn, zwak siltig, beigegrijs;Sand, very fine, silty weak , beige gray;sand;beige gray;beige;;0
+LBU_05_11;40.5;42;Zand, zeer fijn, zwak siltig, brokken veen, beigegrijs;Sand, very fine, silty weak , chunks of peat , beige gray;sand;beige gray;beige;chunks of peat;0
+LBU_05_11;42;50;Zand, zeer fijn, zwak siltig, grijs;Sand, very fine, weak silty , gray;sand;gray;gray;;0
+LBU_05_12;0;0.3;Zand, matig fijn, zwak siltig, matig humeus, donkerbruin;Sand , moderately fine, silty weak , moderate humus , dark brown;sand;dark brown;dark brown;moderate humic;0
+LBU_05_12;0.3;5.8;Leem, sterk zandig, matig grindig, roodbruin;Loam , very sandy, gravelly moderate , reddish brown;loam;reddish brown;red brown;;0
+LBU_05_12;5.8;8;Grind, matig grof, zwak zandig, grijs;Gravel , moderately coarse , light sandy, gray;gravel;gray;gray;;0
+LBU_05_12;8;12;Zand, matig fijn, zwak siltig,zwak grindig, zwak leemhoudend, roodbruin;Sand , finely weak silty , gravelly weak weak loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_12;12;22;Zand, matig fijn, zwak siltig, resten veen, grijs;Sand , finely weak silty , remains peat , gray;sand;gray;gray;weak peat;0
+LBU_05_12;22;32;Zand, matig fijn, zwak siltig, grijsbeige;Sand , finely weak silty , gray beige;sand;gray beige;gray;;0
+LBU_05_12;32;37;Zand, matig fijn, zwak siltig, resten veen, grijs;Sand , finely weak silty , remains peat , gray;sand;gray;gray;weak peat;0
+LBU_05_12;37;40;Zand, matig fijn, zwak siltig, bruin, sandstone pieces;Sand , finely weak silty brown sandstone pieces;sand;brown;brown;;0
+LBU_05_12;40;50;Zand, matig fijn, zwak siltig, resten veen, bruin;Sand , finely weak silty , remains peat , brown;sand;brown;brown;weak peat;0
+LBU_05_13;0;0.3;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_13;0.3;1;Zand, matig fijn, zwak siltig, sterk grindig, roodbruin;Sand , finely weak silty , gravelly strong , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_13;1;2.5;Leem, sterk zandig, sterk grindig, roodbruin;Loam , very sandy, very gravelly , brown;loam;brown;brown;;0
+LBU_05_13;2.5;5;Grind, matig grof, matig zandig, grijs;Gravel , moderately coarse , moderately sandy, gray;gravel;gray;gray;;0
+LBU_05_13;5;6;Zand, matig fijn, zwak siltig, zwak grindig, geelbruin;Sand , moderately fine, silty weak , weak gravelly , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_13;6;16;Zand, matig fijn, zwak siltig, beige;Sand , finely weak silty , beige;sand;beige;beige;;0
+LBU_05_13;16;27;Zand, matig fijn, zwak siltig, sporen veen, beige;Sand , finely weak silty , traces of peat , beige;sand;beige;beige;traces;0
+LBU_05_13;27;27.3;volledig bruinkool, donkerbruin;fully lignite , dark;lignite;dark brown;dark brown;full;0
+LBU_05_13;27.3;50;Zand, zeer fijn, zwak siltig, sporen veen, bruin;Sand, very fine, silty weak traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_14;0;0.3;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_14;0.3;2.5;Leem, sterk zandig, matig grindig, bruin;Loam , very sandy, gravelly moderately, brown;loam;brown;brown;;0
+LBU_05_14;2.5;3.5;Leem, sterk zandig, geelbruin;Loam , sandy strong , yellow-brown;loam;yellow brown;yellow brown;;0
+LBU_05_14;3.5;5;Zand, matig fijn, zwak siltig, matig grindig, matig leemhoudend, geelbruin;Sand , finely weak silty , gravelly moderate , moderately loamy , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_14;5;18;Zand, matig fijn, zwak siltig, geel;Sand , finely weak silty , yellow;sand;yellow;yellow;;0
+LBU_05_14;18;28.1;Zand, zeer fijn, zwak siltig, sporen veen, beige;Sand, very fine, silty weak traces of peat , beige;sand;beige;beige;traces;0
+LBU_05_14;28.1;32.5;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_14;32.5;38;Zand, matig fijn, zwak siltig, laagjes klei, beigebruin;Sand , finely weak silty , clay layers , beige brown;sand;beige brown;beige brown;;0
+LBU_05_14;38;50;Zand, zeer fijn, zwak siltig, bruin;Sand, very fine, weak silty , brown;sand;brown;brown;;0
+LBU_05_15;0;0.3;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_15;0.3;2.5;Zand, matig fijn, zwak siltig, matig grindig, matig leemhoudend, roodbruin;Sand , finely weak silty , gravelly moderate , moderately loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_15;2.5;3.5;Leem, sterk zandig, geelbruin;Loam , sandy strong , yellow-brown;loam;yellow brown;yellow brown;;0
+LBU_05_15;3.5;5;Zand, zeer fijn, zwak siltig, matig grindig, matig leemhoudend, geelbruin;Sand, very fine, silty, weakly , moderately gravelly , moderately loamy , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_15;5;18;Zand, matig fijn, zwak siltig, geel;Sand , finely weak silty , yellow;sand;yellow;yellow;;0
+LBU_05_15;18;28.1;Zand, zeer fijn, zwak siltig, sporen veen, beige;Sand, very fine, silty weak traces of peat , beige;sand;beige;beige;traces;0
+LBU_05_15;28.1;32.5;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_15;32.5;38;Zand, matig fijn, zwak siltig, laagjes klei, beigebruin;Sand , finely weak silty , clay layers , beige brown;sand;beige brown;beige brown;;0
+LBU_05_15;38;50;Zand, zeer fijn, zwak siltig, bruin;Sand, very fine, weak silty , brown;sand;brown;brown;;0
+LBU_05_16;0;0.3;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_16;0.3;1.4;Leem, sterk zandig, sterk grindig, bruin;Loam , very sandy, very gravelly , brown;loam;brown;brown;;0
+LBU_05_16;1.4;2.5;Zand, matig fijn, zwak siltig, sterk grindig, bruin;Sand , finely weak silty , gravelly strong , brown;sand;brown;brown;;0
+LBU_05_16;2.5;4;Grind, matig grof, matig zandig, beige;Gravel , moderately coarse , moderately sandy, beige;gravel;beige;beige;;0
+LBU_05_16;4;6;Zand, matig fijn, zwak siltig, zwak grindig, zwak leemhoudend, roodbruin;Sand , finely weak silty , gravelly weak weak loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_16;6;17;Zand, zeer fijn, zwak siltig, roodbruin;Sand, very fine, silty weak , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_16;17;27.4;Zand, zeer fijn, zwak siltig, donkerbruin;Sand, very fine, silty weak , dark brown;sand;dark brown;dark brown;;0
+LBU_05_16;27.4;27.6;Klei, matig zandig, bruin;Clay , moderately sandy, brown;clay;brown;brown;;0
+LBU_05_16;27.6;50;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_17;0;0.3;Zand, matig fijn, zwak siltig, zwak humeus, bruin;Sand , moderately fine, silty weak , weak humic , brown;sand;brown;brown;weak humic;0
+LBU_05_17;0.3;1.5;Leem, sterk zandig, sterk grindig, roodbruin;Loam , very sandy, very gravelly , brown;loam;brown;brown;;0
+LBU_05_17;1.5;4;Zand, matig fijn, zwak siltig, leemhoudend, roodbruin;Sand , finely weak silty , loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_17;4;5;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_17;5;8;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_05_17;8;12;Zand, matig fijn, zwak siltig, zwak roesthoudend, lichtbruin;Sand , moderately fine, silty weak , weak iron crust content, light brown;sand;light brown;light brown;;0
+LBU_05_17;12;17.6;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_17;17.6;42;Zand, zeer fijn, zwak siltig, bruin;Sand, very fine, weak silty , brown;sand;brown;brown;;0
+LBU_05_18;0;0.3;Grind, matig grof, zwak zandig, grijsbruin;Gravel , moderately coarse , light sandy, gray-brown;gravel;gray brown;gray brown;;0
+LBU_05_18;0.3;2.4;Zand, matig fijn, zwak siltig, matig grindig, lichtbruin;Sand , finely weak silty , moderately gravelly , light;sand;light brown;light brown;;0
+LBU_05_18;2.4;5.5;Zand, matig fijn, zwak siltig,leemhoudend, roodbruin;Sand , finely weak silty , loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_18;5.5;10;Zand, zeer fijn, zwak siltig, roodbruin;Sand, very fine, silty weak , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_18;10;16.4;Zand, zeer fijn, zwak siltig, beige;Sand, very fine, silty weak , beige;sand;beige;beige;;0
+LBU_05_18;16.4;42;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_18;42;44;Zand, matig fijn, zwak siltig, bruin, zandsteenbrokjes;Sand , finely weak silty , brown, sandstone fragments;sand;brown;brown;;0
+LBU_05_18;44;50;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_19;0;0.1;Zand, matig fijn, zwak siltig, matig humeus, bruin;Sand , finely weak silty , moderately humic , brown;sand;brown;brown;moderate humic;0
+LBU_05_19;0.1;4;Leem, sterk zandig, sterk grindig, rood-bruin ;Loam , very sandy, very gravelly , red - brown;loam;red brown;red brown;;0
+LBU_05_19;4;9.1;Grind, matig grof, zwak zandig, grijs;Gravel , moderately coarse , light sandy, gray;gravel;gray;gray;;0
+LBU_05_19;9.1;10;Zand, matig fijn, zwak siltig, matig grindig, beige;Sand , finely weak silty , moderately gravelly , beige;sand;beige;beige;;0
+LBU_05_19;10;13.8;Zand, zeer fijn, zwak siltig, beige;Sand, very fine, silty weak , beige;sand;beige;beige;;0
+LBU_05_19;13.8;39.4;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_19;39.4;41;Zand, zeer fijn, zwak siltig, laagjes klei, bruin;Sand, very fine, weak silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_19;41;50;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_19;50;56;Zand, zeer fijn, zwak siltig, grijsbruin;Sand, very fine, weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_20;0;0.2;Zand, matig fijn, zwak siltig, zwak humeus, bruin;Sand , moderately fine, silty weak , weak humic , brown;sand;brown;brown;weak humic;0
+LBU_05_20;0.2;6;Leem, sterk zandig, matig grindig, roodbruin;Loam , very sandy, gravelly moderate , reddish brown;loam;reddish brown;red brown;;0
+LBU_05_20;6;9.8;Grind, zeer grof, zwak zandig, grijsbruin;Gravel , very coarse , light sandy, gray-brown;gravel;gray brown;gray brown;;0
+LBU_05_20;9.8;15.4;Zand, matig fijn, zwak siltig, geel;Sand , finely weak silty , yellow;sand;yellow;yellow;;0
+LBU_05_20;15.4;34;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_20;34;46;Zand, zeer fijn, zwak siltig, grijsbruin;Sand, very fine, weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_20;46;50;Zand, zeer fijn, zwak siltig, sporen veen;Sand, very fine, silty weak traces of peat;sand;;;traces;0
+LBU_05_21;0.2;1;Zand, matig fijn, zwak siltig, matig grindig, bruin;Sand, finely weak silty, moderately gravelly, brown;sand;brown;brown;;0
+LBU_05_21;1;2.7;Zand, matig fijn, zwak siltig, zwak grindig, bruin;Sand, moderately fine, silty weak, weak gravelly, brown;sand;brown;brown;;0
+LBU_05_21;2.7;5.1;Zand, matig fijn, zwak siltig, sterk grindig, lichtbruin;Sand, finely weak silty, gravelly strong, light;sand;light brown;light brown;;0
+LBU_05_21;5.1;9;Zand, matig fijn, zwak siltig, sterk grindig, lichtbruin;Sand, finely weak silty, gravelly strong, light;sand;light brown;light brown;;0
+LBU_05_21;9;12;Zand, matig fijn, zwak siltig, zwak grindig, lichtbruin;Sand, finely weak silty, gravelly weak, light brown;sand;light brown;light brown;;0
+LBU_05_21;12;20;Zand, matig fijn, zwak siltig,zwak humeus, witgrijs;Sand, moderately fine, silty weak, weak humous, white-gray;sand;white-gray;white gray;weak humic;0
+LBU_05_21;20;22;Zand, matig fijn, zwak siltig,beige;Sand, finely weak silty, beige;sand;beige;beige;;0
+LBU_05_21;22;24;Zand, matig fijn, zwak siltig, bruin;Sand, finely weak silty, brown;sand;brown;brown;;0
+LBU_05_21;24;28;Zand, matig fijn, zwak siltig, beige;Sand, finely weak silty, beige;sand;beige;beige;;0
+LBU_05_21;28;34.8;Zand, zeer fijn, zwak siltig, grijsbruin;Sand, very fine, weak silty, gray-brown;sand;gray-brown;gray brown;;0
+LBU_05_21;34.8;50;Zand, zeer fijn, zwak siltig, laagjes klei, resten hout;Sand, very fine, silty weak, layers of clay, wood residues;sand;;;weak wood;0
+LBU_05_22;0;4.3;Leem, sterk zandig, sterk grindig, roodbruin;Loam , very sandy, very gravelly , brown;loam;brown;brown;;0
+LBU_05_22;4.3;5.5;Leem, sterk zandig, matig grindig, roodbruin;Loam , very sandy, gravelly moderate , reddish brown;loam;reddish brown;red brown;;0
+LBU_05_22;5.5;9.5;Grind, zeer grof, zwak zandig, roodgrijs;Gravel , very coarse , light sandy, red gray;gravel;red gray;red;;0
+LBU_05_22;9.5;12;Zand, matig fijn, zwak siltig, zwak grindig, roodbruin;Sand , finely weak silty , gravelly weak , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_22;12;13.5;Zand, zeer fijn, zwak siltig, beigebruin;Sand, very fine, silty weak , beige brown;sand;beige brown;beige brown;;0
+LBU_05_22;13.5;38;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_22;38;42;Zand, zeer fijn, zwak siltig, sporen veen, bruin;Sand, very fine, silty weak traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_23;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, roodbruin;Sand , moderately fine, silty weak , weak humic , brown;sand;brown;brown;weak humic;0
+LBU_05_23;0.1;4.5;Leem, zwak zandig, sterk grindig, roodbruin;Loam , weak sandy, gravelly strong , reddish brown;loam;reddish brown;red brown;;0
+LBU_05_23;4.5;5;Leem, zwak zandig, roodbruin;Loam , weak sandy, brown;loam;brown;brown;;0
+LBU_05_23;5;5.5;Grind, matig grof, sterk zandig, roodbruin;Gravel , moderately coarse , strong sandy, brown;gravel;brown;brown;;0
+LBU_05_23;5.5;13.5;Zand, zeer fijn, zwak siltig, geelbruin;Sand, very fine, weak silty , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_23;13.5;16;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_23;16;36;Zand, matig fijn, zwak siltig, beigebruin;Sand , finely weak silty , brown beige;sand;brown beige;beige brown;;0
+LBU_05_23;36;50;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_24;0;0.1;Zand, matig fijn, zwak siltig, zwak humeus, donkerbruin;Sand , moderately fine, silty weak , weak humous , dark brown;sand;dark brown;dark brown;weak humic;0
+LBU_05_24;0.1;5;Zand, uiterst fijn, zwak siltig, sterk grindig, zwak leemhoudend, roodbruin;Sand, very fine, weak silty , gravelly strong , weak loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_24;5;8;Grind, zeer grof, zwak zandig, bruin;Gravel , very coarse , light sandy brown;gravel;brown;brown;;0
+LBU_05_24;8;9;Zand, matig fijn, zwak siltig, matig grindig, geelbruin;Sand , finely weak silty , moderately gravelly , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_24;9;10;Leem, sterk zandig, bruin;Loam , very sandy, brown;loam;brown;brown;;0
+LBU_05_24;10;24;Zand, matig fijn, zwak siltig, beige;Sand , finely weak silty , beige;sand;beige;beige;;0
+LBU_05_24;24;32;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_24;32;42;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+LBU_05_24;42;50;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_26;0;4;Zand, matig fijn, zwak siltig, roodbruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_26;4;24;Zand, matig fijn, zwak siltig, sporen veen, beige;Sand , finely weak silty , traces of peat , beige;sand;beige;beige;traces;0
+LBU_05_26;24;31;Zand, zeer fijn, zwak siltig, beigebruin;Sand, very fine, silty weak , beige brown;sand;beige brown;beige brown;;0
+LBU_05_26;31;34;Zand, matig fijn, zwak siltig, laagjes klei, bruin;Sand , finely weak silty , clay layers , brown;sand;brown;brown;;0
+LBU_05_26;34;36;Klei, zwak siltig, zwak veenhoudend, donkerbruin;Clay , silty weak , weak peat content, dark brown;clay;dark brown;dark brown;weak peat;0
+LBU_05_26;36;47;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_26;47;50;Zand, zeer fijn, zwak siltig, grijsbruin;Sand, very fine, weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_27;0;1;Zand, matig fijn, zwak siltig, sterk grindig, bruin;Sand , finely weak silty , gravelly strong , brown;sand;brown;brown;;0
+LBU_05_27;1;2;Zand, matig fijn, zwak siltig, sterk grindig, lichtbruin;Sand , finely weak silty , gravelly strong , light;sand;light brown;light brown;;0
+LBU_05_27;2;3;Zand, matig fijn, zwak siltig, sterk grindig, grijs;Sand , moderately fine, silty weak , strong gravelly , gray;sand;gray;gray;;0
+LBU_05_27;3;9.8;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_27;9.8;11.5;Zand, matig fijn, zwak siltig, matig leemhoudend, lichtbruin;Sand , finely weak silty , moderately loamy , light;sand;light brown;light brown;;0
+LBU_05_27;11.5;23.5;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_27;23.5;24;Zand, zeer fijn, kleiïg, grijs;Sand, very fine, clayey , gray;sand;gray;gray;;0
+LBU_05_27;24;32.5;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_27;32.5;34;Zand, zeer fijn, kleiïg, matig veenhoudend, lichtbruin;Sand, very fine, clayey , moderate peat content, light;sand;light brown;light brown;moderate peat;0
+LBU_05_27;34;44;Zand, matig grof, zwak siltig, bruin;Sand, medium coarse , weak silty , brown;sand;brown;brown;;0
+LBU_05_27;44;50;Zand, matig grof, zwak siltig, grijs;Sand, medium coarse , weak silty , gray;sand;gray;gray;;0
+LBU_05_28;0;0.5;Zand, matig fijn, zwak siltig, sterk humeus, donkerbruin;Sand , finely weak silty , humic strong , dark brown;sand;dark brown;dark brown;high humic;0
+LBU_05_28;0.5;6.3;Zand, matig fijn, zwak siltig, matig grindig, lichtbruin;Sand , finely weak silty , moderately gravelly , light;sand;light brown;light brown;;0
+LBU_05_28;6.3;14;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_05_28;14;15.5;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_28;15.5;15.8;Veen, sterk zandig, grijs;Peat, strong sandy, gray;lignite;gray;gray;full;0
+LBU_05_28;15.8;20;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_28;20;38.5;Zand, matig grof, zwak siltig, grijs;Sand, medium coarse , weak silty , gray;sand;gray;gray;;0
+LBU_05_28;38.5;40.2;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_28;40.2;50;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_29;0;0.3;Zand, matig fijn, zwak siltig, sterk humeus, donkerbruin;Sand , finely weak silty , humic strong , dark brown;sand;dark brown;dark brown;high humic;0
+LBU_05_29;0.3;4.1;Zand, matig fijn, zwak siltig, matig grindig, matig leemhoudend, roodbruin;Sand , finely weak silty , gravelly moderate , moderately loamy , reddish brown;sand;reddish brown;red brown;;0
+LBU_05_29;4.1;6.8;Zand, matig fijn, zwak siltig, matig grindig, grijs;Sand , finely weak silty , moderately gravelly , gray;sand;gray;gray;;0
+LBU_05_29;6.8;8.6;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_29;8.6;10.2;Zand, matig fijn, zwak siltig, matig leemhoudend, grijsbruin;Sand , finely weak silty , moderately loamy , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_29;10.2;11.7;Zand, zeer fijn, zwak siltig, laagjes klei, grijs;Sand, very fine, weak silty , clay layers , gray;sand;gray;gray;;0
+LBU_05_29;11.7;13.7;Zand, matig fijn, zwak siltig, grijsgeel;Sand , finely weak silty , gray yellow;sand;gray yellow;gray yellow;;0
+LBU_05_29;13.7;17.5;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_29;17.5;23.8;Zand, matig fijn, zwak siltig, grijsbruin;Sand , finely weak silty , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_29;23.8;25.5;Zand, matig fijn, zwak siltig, sporen veen, grijsbruin;Sand , finely weak silty , traces of peat , gray-brown;sand;gray brown;gray brown;traces;0
+LBU_05_29;25.5;41.9;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_29;41.9;42.6;Zand, matig fijn, zwak siltig, sporen veen, bruin;Sand , finely weak silty , traces of peat , brown;sand;brown;brown;traces;0
+LBU_05_29;42.6;50;Zand, matig fijn, zwak siltig, bruin;Sand , finely weak silty , brown;sand;brown;brown;;0
+LBU_05_30;0;0.3;Zand, matig fijn, zwak siltig, sterk humeus, bruin;Sand , finely weak silty , highly humic , brown;sand;brown;brown;high humic;0
+LBU_05_30;0.3;2;Zand, matig fijn, zwak siltig, matig grindig, geelbruin;Sand , finely weak silty , moderately gravelly , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_05_30;2;6.1;Zand, matig fijn, zwak siltig, matig grindig, matig leemhoudend, grijsbruin;Sand , finely weak silty , gravelly moderate , moderately loamy , gray-brown;sand;gray brown;gray brown;;0
+LBU_05_30;6.1;8.8;Zand, matig fijn, zwak siltig, zwak grindig, grijs;Sand , moderately fine, silty weak , weak gravelly , gray;sand;gray;gray;;0
+LBU_05_30;8.8;11;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_05_30;11;20.8;Zand, matig fijn, zwak siltig, grijs;Sand , finely weak silty , gray;sand;gray;gray;;0
+LBU_05_30;20.8;21.5;Zand, matig fijn, zwak siltig, matig veenhoudend, grijsbruin;Sand , moderately fine, silty weak , moderate peat content, gray-brown;sand;gray brown;gray brown;moderate peat;0
+LBU_05_30;21.5;36;Zand, matig fijn, zwak siltig, sporen veen, grijs;Sand , finely weak silty , traces of peat , gray;sand;gray;gray;traces;0
+LBU_05_30;36;50;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+LBU_87_1;0;1.5;Zand - stenen;Sand - stones;sand;;;;0
+LBU_87_1;1.5;2.5;Grind;gravel;gravel;;;;0
+LBU_87_1;2.5;4;Leem;loam;loam;;;;0
+LBU_87_1;4;4.5;Leem - grind;Loam - gravel;loam;;;;0
+LBU_87_1;4.5;5;Grind;gravel;gravel;;;;0
+LBU_87_1;5;5.7;Grind - leem;Gravel - clay;gravel;;;;0
+LBU_87_1;5.7;12;Grind;gravel;gravel;;;;0
+LBU_87_1;12;14;Zand;sand;sand;;;;0
+LBU_87_1;14;15;Leembank 14-15: Zandsteen-leem;Loam Bank 14-15 : sandstone - clay;sand;;;;0
+LBU_87_1;15;16;Leembank  15-16: zand-leem;Loam Bank 15-16 : sandy loam;sand;;;;0
+LBU_87_1;16;18;zand - leem (wit);sandy - loam ( white);sand;;;;0
+LBU_87_1;18;19; zand - iets witter; sand - something whiter;sand;;;;0
+LBU_87_1;19;24;zand -  wit;sand - white;sand;white;white;;0
+LBU_87_1;24;50;zand - bruin;sand - brown;sand;brown;brown;;0
+LBU_87_2;0;1;Zand;sand;sand;;;;0
+LBU_87_2;1;2;Zand - leem;Sandy - loam;sand;;;;0
+LBU_87_2;2;3;Leem;loam;loam;;;;0
+LBU_87_2;3;3.5;Grind - leem;Gravel - clay;gravel;;;;0
+LBU_87_2;3.5;11;Grind;gravel;gravel;;;;0
+LBU_87_2;11;12;Grind - leem;Gravel - clay;gravel;;;;0
+LBU_87_2;12;18;Grind;gravel;gravel;;;;0
+LBU_87_2;18;18.5;Grind - zand , geel;Gravel - sand, yellow;gravel;yellow;yellow;;0
+LBU_87_2;18.5;20;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_2;20;21;Zand - leem;Sandy - loam;sand;;;;0
+LBU_87_2;21;29;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_2;29;39;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_2;39;40;Zand - spriet , bruin-zwart;Sand - peat, brown-black;sand;brown black;black brown;high peat;0
+LBU_87_2;40;43;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_2;43;44;zand - weinig spriet , bruin;sand - little peat content, brown;sand;brown;brown;weak peat;0
+LBU_87_2;44;50;Zand , bruin-grijs;Sand, brown-gray;sand;brown gray;gray brown;;0
+LBU_87_3;0;2;Zand - stenen;Sand - stones;sand;;;;0
+LBU_87_3;2;3;Leem -  stenen;Loam - Stone;loam;;;;0
+LBU_87_3;3;3.3;Zand  ;sand;sand;;;;0
+LBU_87_3;3.3;4.3;Leem  ;loam;loam;;;;0
+LBU_87_3;4.3;5;Grind;gravel;gravel;;;;0
+LBU_87_3;5;6;Grind - leem & zandsteen;Grind - clay and sandstone;gravel;;;;0
+LBU_87_3;6;12;Grind;gravel;gravel;;;;0
+LBU_87_3;12;13;Grind - leem  ;Gravel - clay;gravel;;;;0
+LBU_87_3;13;17.5;Grind - weinig zand;Grind - little sand;gravel;;;;0
+LBU_87_3;17.5;20;Zand , geel-bruin;Sand , yellow-brown;sand;yellow brown;yellow brown;;0
+LBU_87_3;20;21;Zand - leem;Sandy - loam;sand;;;;0
+LBU_87_3;21;23;Zand , geel-bruin;Sand , yellow- brown;sand;yellow brown;yellow brown;;0
+LBU_87_3;23;25;Zand , geel-bruin;Sand , yellow- brown;sand;yellow brown;yellow brown;;0
+LBU_87_3;25;27;Zand , geel-bruin;Sand , yellow- brown;sand;yellow brown;yellow brown;;0
+LBU_87_3;27;30;Zand , grijs-bruin;Sand , gray- brown;sand;gray brown;gray brown;;0
+LBU_87_3;30;30.5;spriet ;peat;lignite;;;full;0
+LBU_87_3;30.5;34;zand , wit;sand, white;sand;white;white;;0
+LBU_87_3;34;37;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_3;37;40;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_3;40;40.5;spriet;peat;lignite;;;full;0
+LBU_87_3;40.5;43;zand , bruin-grijs;sand, brown-gray;sand;brown gray;gray brown;;0
+LBU_87_3;43;44;Zand -  spriet , grijs;Sand - peat , gray;sand;gray;gray;moderate peat;0
+LBU_87_3;44;50;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_4;0;1;Zand - stenen;Sand - stones;sand;;;;0
+LBU_87_4;1;3;Leem - stenen;Loam - Stone;loam;;;;0
+LBU_87_4;3;4;Grind -  leem;Gravel - clay;gravel;;;;0
+LBU_87_4;4;13.5;Grind  ;gravel;gravel;;;;0
+LBU_87_4;13.5;14;Grof zand , geel;Coarse sand , yellow;sand;yellow;yellow;;0
+LBU_87_4;14;14.5;Leem - harde steen;Loam - hard stone;loam;;;;0
+LBU_87_4;14.5;15.5;Grind - zand;Gravel - Sand;gravel;;;;0
+LBU_87_4;15.5;17;Zand - leem;Sandy - loam;sand;;;;0
+LBU_87_4;17;19;Zand , geel;Sand , yellow;sand;yellow;yellow;;0
+LBU_87_4;19;22.7;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_4;22.7;23;Spriet;peat;lignite;;;full;0
+LBU_87_4;23;29.5;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_4;29.5;30;Spriet;peat;lignite;;;full;0
+LBU_87_4;30;32;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_4;32;36;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_4;36;40;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_4;40;43;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_4;43;45;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_4;45;46;Zand - spriet , ;Sand - tourbe;sand;;;;0
+LBU_87_4;46;47.5;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_4;47.5;50;Zand - spriet;Sand - peat;sand;;;high peat;0
+LBU_87_5;0;1.5;Zand;sand;sand;;;;0
+LBU_87_5;1.5;3.2;Zand - leem;Sandy - loam;sand;;;;0
+LBU_87_5;3.2;11.8;Grind - iets leem;Grind - something loam;gravel;;;;0
+LBU_87_5;11.8;12;Leem;loam;loam;;;;0
+LBU_87_5;12;16;Grind  ;gravel;gravel;;;;0
+LBU_87_5;16;20;Zand , geel;Sand , yellow;sand;yellow;yellow;;0
+LBU_87_5;20;26;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_5;26;29;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_5;29;31;Zand , lichtbruin;Sand , light brown;sand;light brown;light brown;;0
+LBU_87_5;31;32;Zand - spriet , grijs ,;Sand - tourbe, gray,;sand;gray;gray;;0
+LBU_87_5;32;33;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_5;33;35;Zand , donkergrijs , ;Sand, dark gray ,;sand;dark gray;dark gray;;0
+LBU_87_5;35;38;Zand , lichtgrijs;Sand , light gray;sand;light gray;light gray;;0
+LBU_87_5;38;42;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_5;42;45;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_5;45;50;Zand , lichtgrijs;Sand , light gray;sand;light gray;light gray;;0
+LBU_87_6;0;2.5;Zand;sand;sand;;;;0
+LBU_87_6;2.5;4;Grind;gravel;gravel;;;;0
+LBU_87_6;4;5.5;Leem;loam;loam;;;;0
+LBU_87_6;5.5;7;Grind - zand;Gravel - Sand;gravel;;;;0
+LBU_87_6;7;16;Grind;gravel;gravel;;;;0
+LBU_87_6;16;17.8;Zand , groen ;Sand, green;sand;green;green;;0
+LBU_87_6;17.8;19;Zand -  leem;Sandy - loam;sand;;;;0
+LBU_87_6;19;19.5;Leem - grind;Loam - gravel;loam;;;;0
+LBU_87_6;19.5;22;Zand , geel;Sand , yellow;sand;yellow;yellow;;0
+LBU_87_6;22;26;Zand , lichtgeel-wit;Sand , yellow - white;sand;yellow white;yellow;;0
+LBU_87_6;26;30;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_6;30;40;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_6;40;46;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_6;46;50;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_7;0;1;Zand;sand;sand;;;;0
+LBU_87_7;1;1.8;Zand - stenen;Sand - stones;sand;;;;0
+LBU_87_7;1.8;3;Leem;loam;loam;;;;0
+LBU_87_7;3;4;Leem -  grind;Loam - gravel;loam;;;;0
+LBU_87_7;4;4.5;Zand , rood;Sand , red;sand;red;red;;0
+LBU_87_7;4.5;8.8;Grind;gravel;gravel;;;;0
+LBU_87_7;8.8;10.2;Leem;loam;loam;;;;0
+LBU_87_7;10.2;17.2;Grind;gravel;gravel;;;;0
+LBU_87_7;17.2;17.3;Leem;loam;loam;;;;0
+LBU_87_7;17.3;19;Grind;gravel;gravel;;;;0
+LBU_87_7;19;24;Zand , geel;Sand , yellow;sand;yellow;yellow;;0
+LBU_87_7;24;30;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_7;30;31;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_7;31;44;Zand , bruin-grijs;Sand, brown-gray;sand;brown gray;gray brown;;0
+LBU_87_7;44;45;Zand -   spriet ;Sand - tourbe;sand;;;;0
+LBU_87_7;45;47;Zand , lichtbruin;Sand , light brown;sand;light brown;light brown;;0
+LBU_87_7;47;50;Zand , grijs;Sand , gray;sand;gray;gray;;0
+LBU_87_8;0;0.3;Grind;gravel;gravel;;;;0
+LBU_87_8;0.3;6;Zand , geel;Sand , yellow;sand;yellow;yellow;;0
+LBU_87_8;6;12;Zand , wit-grijs;Sand, white-gray;sand;white gray;white gray;;0
+LBU_87_8;12;15;Zand , wit;Sand , white;sand;white;white;;0
+LBU_87_8;15;18;Zand , bruin;Sand, brown;sand;brown;brown;;0
+LBU_87_8;18;35;Zand , lichtgrijs;Sand , light gray;sand;light gray;light gray;;0
+LBU_96_1;0;3;AFDEK;hedging;;;;;0
+LBU_96_1;3;7;geel;yellow;sand;gray yellow;gray yellow;;0
+LBU_96_1;7;8;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_1;8;9;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_1;9;10;geel grijs;gray;sand;gray;gray;;0
+LBU_96_1;10;11;geel grijs;gray;sand;gray;gray;;0
+LBU_96_1;11;12;grijs;gray;sand;gray;gray;;0
+LBU_96_1;12;13;grijs;gray;sand;gray;gray;;0
+LBU_96_1;13;14;grijs;gray;sand;gray;gray;;0
+LBU_96_1;14;15;grijs;gray;sand;gray;gray;;0
+LBU_96_1;15;16;grijs;gray;sand;gray;gray;;0
+LBU_96_1;16;17;grijs;gray;sand;gray;gray;;0
+LBU_96_1;17;18;grijs;gray;sand;gray;gray;;0
+LBU_96_1;18;19;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_1;19;20;bruin;brown;sand;brown;brown;;0
+LBU_96_1;20;21;bruin;brown;sand;brown;brown;;0
+LBU_96_1;21;22;bruin;brown;sand;brown;brown;;0
+LBU_96_1;22;23;bruin;brown;sand;brown;brown;;0
+LBU_96_1;23;24;bruin;brown;sand;brown;brown;;0
+LBU_96_1;24;25;bruin;brown;sand;brown;brown;;0
+LBU_96_1;25;26;bruin;brown;sand;brown;brown;;0
+LBU_96_1;26;27;bruin;brown;sand;brown;brown;;0
+LBU_96_1;27;28;bruin;brown;sand;brown;brown;;0
+LBU_96_1;28;29;bruin;brown;sand;brown;brown;;0
+LBU_96_1;29;30;bruin;brown;sand;brown;brown;;0
+LBU_96_1;30;31;bruin;brown;sand;brown;brown;;0
+LBU_96_1;31;32;bruin;brown;sand;brown;brown;;0
+LBU_96_1;32;33;bruin;brown;sand;brown;brown;;0
+LBU_96_1;33;34;bruin;brown;sand;brown;brown;;0
+LBU_96_1;34;35;bruin;brown;sand;brown;brown;;0
+LBU_96_1;35;36;bruin;brown;sand;brown;brown;;0
+LBU_96_1;36;37;bruin;brown;sand;brown;brown;;0
+LBU_96_2;0;1;AFDEK;hedging;;;;;0
+LBU_96_2;1;2;geel grijs;gray;sand;gray yellow;gray yellow;;0
+LBU_96_2;2;3;geel grijs;gray;sand;gray yellow;gray yellow;;0
+LBU_96_2;3;4;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;4;5;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;5;6;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;6;7;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;7;8;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;8;9;geel;yellow;sand;yellow;yellow;;0
+LBU_96_2;9;10;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_2;10;11;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_2;11;12;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_2;12;13;licht geel;light yellow;sand;light yellow;light yellow;;0
+LBU_96_2;13;14;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_2;14;15;bruin;brown;sand;brown;brown;;0
+LBU_96_2;15;16;bruin;brown;sand;brown;brown;;0
+LBU_96_2;16;17;bruin;brown;sand;brown;brown;;0
+LBU_96_2;17;18;bruin;brown;sand;brown;brown;;0
+LBU_96_2;18;19;bruin;brown;sand;brown;brown;;0
+LBU_96_2;19;20;bruin;brown;sand;brown;brown;;0
+LBU_96_2;20;21;bruin;brown;sand;brown;brown;;0
+LBU_96_2;21;22;bruin;brown;sand;brown;brown;;0
+LBU_96_2;22;23;bruin;brown;sand;brown;brown;;0
+LBU_96_2;23;24;bruin;brown;sand;brown;brown;;0
+LBU_96_2;24;25;bruin;brown;sand;brown;brown;;0
+LBU_96_2;25;26;bruin;brown;sand;brown;brown;;0
+LBU_96_2;26;27;bruin;brown;sand;brown;brown;;0
+LBU_96_2;27;28;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;28;29;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;29;30;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;30;31;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;31;32;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;32;33;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;33;34;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;34;35;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_2;35;36;donker bruin;dark brown;sand;dark brown;dark brown;;0
+LBU_96_3;0;1;AFDEK;hedging;;;;;0
+LBU_96_3;1;2;geel;yellow;sand;yellow;yellow;;0
+LBU_96_3;2;3;geel;yellow;sand;yellow;yellow;;0
+LBU_96_3;3;4;geel;yellow;sand;yellow;yellow;;0
+LBU_96_3;4;5;geel;yellow;sand;yellow;yellow;;0
+LBU_96_3;5;6;geel;yellow;sand;yellow;yellow;;0
+LBU_96_3;6;7;bruin;brown;sand;brown;brown;;0
+LBU_96_3;7;8;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;8;9;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;9;10;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;10;11;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;11;12;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;12;13;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;13;14;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;14;15;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;15;16;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;16;17;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;17;18;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;18;19;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;19;20;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;20;21;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_3;21;22;grijs;gray;sand;gray;gray;;0
+LBU_96_3;22;23;grijs;gray;sand;gray;gray;;0
+LBU_96_3;23;24;grijs;gray;sand;gray;gray;;0
+LBU_96_3;24;25;grijs;gray;sand;gray;gray;;0
+LBU_96_3;25;26;grijs;gray;sand;gray;gray;;0
+LBU_96_3;26;27;grijs;gray;sand;gray;gray;;0
+LBU_96_3;27;28;grijs;gray;sand;gray;gray;;0
+LBU_96_3;28;29;grijs;gray;sand;gray;gray;;0
+LBU_96_3;29;30;bruin;brown;sand;brown;brown;;0
+LBU_96_3;30;31;donker geel;dark yellow;sand;yellow;yellow;;0
+LBU_96_3;31;32;grijs;gray;sand;gray;gray;;0
+LBU_96_3;32;33;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;33;34;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;34;35;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;35;36;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;36;37;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;37;38;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;38;39;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;39;40;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_3;40;41;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;0;4;AFDEK;hedging;;;;;0
+LBU_96_4;4;5;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;5;6;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;6;7;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;7;8;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;8;9;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;9;10;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;10;11;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;11;12;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;12;13;geel;yellow;sand;yellow;yellow;;0
+LBU_96_4;13;14;geel grijs;gray;sand;gray yellow;gray yellow;;0
+LBU_96_4;14;15;geel grijs;gray;sand;gray yellow;gray yellow;;0
+LBU_96_4;15;16;geel grijs;gray;sand;gray yellow;gray yellow;;0
+LBU_96_4;16;17;grijs;gray;sand;gray;gray;;0
+LBU_96_4;17;18;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;18;19;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;19;20;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;20;21;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;21;22;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;22;23;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;23;24;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;24;25;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;25;26;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;26;27;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;27;28;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;28;29;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;29;30;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;30;31;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_96_4;31;32;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;32;33;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;33;34;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;34;35;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;35;36;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;36;37;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;37;38;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;38;39;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;39;40;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_96_4;40;41;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_98_2;17;18;afdek, basis grindlaag;cover , base gravel;gravel;;;;0
+LBU_98_2;18;19;geel bruin + 20%>500µ;brown + 20 % > 500µ;sand;yellow brown;yellow brown;;0
+LBU_98_2;19;20;geel bruin + 5% > 500µ;brown + 5 % > 500µ;sand;yellow brown;yellow brown;;0
+LBU_98_2;20;21;geel bruin + 5% > 500µ;brown + 5 % > 500µ;sand;yellow brown;yellow brown;;0
+LBU_98_2;21;22;bruin;brown;sand;yellow brown;yellow brown;;0
+LBU_98_2;22;23;donker bruin;dark brown;sand;yellow brown;yellow brown;;0
+LBU_98_2;23;24;zwart bruin;black brown;sand;dark brown;dark brown;;0
+LBU_98_2;24;25;grijs bruin;gray brown;sand;black brown;black brown;;0
+LBU_98_2;25;26;grijs ;gray;sand;gray;gray;;0
+LBU_98_2;26;27;grijs ;gray;sand;gray;gray;;0
+LBU_98_2;27;28;grijs ;gray;sand;gray;gray;;0
+LBU_98_2;28;29;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_2;29;30;bruin;brown;sand;brown;brown;;0
+LBU_98_2;30;31;bruin +5%>500µ;Brown +5 % > 500µ;sand;brown;brown;;0
+LBU_98_2;31;32;bruin + 10%>500µ;Brown + 10 % > 500µ;sand;brown;brown;;0
+LBU_98_2;32;33;licht bruin + 10% > 500µ;light brown + 10 % > 500µ;sand;light brown;light brown;;0
+LBU_98_2;33;34;licht bruin + 10% > 500µ;light brown + 10 % > 500µ;sand;light brown;light brown;;0
+LBU_98_2;34;35;licht bruin + 10% > 500µ;light brown + 10 % > 500µ;sand;light brown;light brown;;0
+LBU_98_2;35;36;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;36;37;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;37;38;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;38;39;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;39;40;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;40;41;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;41;42;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;42;43;grijs + 20% > 500µ ;gray + 20 % > 500µ;sand;gray;gray;;0
+LBU_98_2;43;44;grijs + 10%> 500µ;gray + 10 % > 500µ;sand;gray;gray;;0
+LBU_98_2;44;45;grijs + 5% > 500µ;gray + 5 % > 500µ;sand;gray;gray;;0
+LBU_98_4;15;16;geel bruin 10%>500µ;brown 10 % > 500µ;sand;brown;brown;;0
+LBU_98_4;16;17;geel bruin 15% > 500µ;brown 15 % > 500µ;sand;brown;brown;;0
+LBU_98_4;17;18;geel;yellow;sand;yellow;yellow;;0
+LBU_98_4;18;19;geel;yellow;sand;yellow;yellow;;0
+LBU_98_4;19;20;geel;yellow;sand;yellow;yellow;;0
+LBU_98_4;20;21;geel;yellow;sand;yellow;yellow;;0
+LBU_98_4;21;22;geel grijs;gray;sand;gray;gray;;0
+LBU_98_4;22;23;grijs zwart + weinig spriet;gray black + little peat content;sand;gray black;black gray ;weak peat;0
+LBU_98_4;23;24;grijs zwart ;gray black;sand;gray black;black gray ;;0
+LBU_98_4;24;25;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_98_4;25;26;donker grijs;dark gray;sand;dark gray;dark gray;;0
+LBU_98_4;26;27;donker grijs;dark gray;sand;dark gray;dark gray;;0
+LBU_98_4;27;28;grijs zwart;gray black;sand;gray black;black gray ;;0
+LBU_98_4;28;29;grijs zwart +5%>500µ;gray black +5 % > 500µ;sand;gray black;black gray ;;0
+LBU_98_4;29;30;grijs zwart +5%>500µ;gray black +5 % > 500µ;sand;gray black;black gray ;;0
+LBU_98_4;30;31;grijs zwart +10%>500µ;gray black +10 % > 500µ;sand;gray black;black gray ;;0
+LBU_98_4;31;32;bruin grijs + 20% > 500µ;brown gray + 20 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;32;33;bruin grijs + 20% > 500µ;brown gray + 20 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;33;34;bruin grijs + 30% > 500µ;brown gray + 30 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;34;35;bruin grijs + 15% >500µ;brown gray + 15 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;35;36;bruin grijs + 5% > 500µ;brown gray + 5 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;36;37;bruin grijs + 5% > 500µ;brown gray + 5 % > 500µ;sand;brown gray;gray brown;;0
+LBU_98_4;37;38;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_4;38;39;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_4;39;40;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_4;40;41;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;14.5;15;geelgrof;yellow coarse;sand;yellow;yellow;;0
+LBU_98_5;15;16;geel grijs grof;coarse gray yellow;sand;gray yellow;gray yellow;;0
+LBU_98_5;16;17;grijs grof;coarse gray;sand;gray;gray;;0
+LBU_98_5;17;18;grijs ;gray;sand;gray;gray;;0
+LBU_98_5;18;19;grijs;gray;sand;gray;gray;;0
+LBU_98_5;19;20;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;20;21;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;21;22;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;22;23;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;23;24;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;24;25;geel grijs ;gray;sand;gray yellow;gray yellow;;0
+LBU_98_5;25;26;bruin;brown;sand;brown;brown;;0
+LBU_98_5;26;27;bruin;brown;sand;brown;brown;;0
+LBU_98_5;27;28;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;28;29;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;29;30;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;30;31;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;31;32;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;32;33;bruin grijs;brown gray;sand;brown gray;gray brown;;0
+LBU_98_5;33;34;bruin;brown;sand;brown;brown;;0
+LBU_98_5;34;35;bruin ligniet;brown lignite;lignite;brown;brown;full;0
+LBU_98_5;35;36;bruin;brown;sand;brown;brown;;0
+LBU_98_5;36;37;bruin grof;brown coarse;sand;brown;brown;;0
+LBU_98_5;37;38;bruin grof;brown coarse;sand;brown;brown;;0
+LBU_98_5;38;39;bruin grof;brown coarse;sand;brown;brown;;0
+LBU_98_5;39;40;bruin grof;brown coarse;sand;brown;brown;;0
+LBU_98_6;19;20;geel grijs grind;gray gravel yellow;gravel;gray yellow;gray yellow;;0
+LBU_98_6;20;21;geel grijs grof;coarse gray yellow;sand;gray yellow;gray yellow;;0
+LBU_98_6;21;22;geel grijs grof;coarse gray yellow;sand;gray yellow;gray yellow;;0
+LBU_98_6;22;23;geel grijs grof;coarse gray yellow;sand;gray yellow;gray yellow;;0
+LBU_98_6;23;24;geel grijs;gray;sand;gray;gray;;0
+LBU_98_6;24;25;geel  - ligniet;yellow - lignite;lignite;yellow;yellow;full;0
+LBU_98_6;25;26;bruin ligniet;brown lignite;lignite;brown;brown;full;0
+LBU_98_6;26;27;bruin;brown;sand;brown;brown;;0
+LBU_98_6;27;28;bruin;brown;sand;brown;brown;;0
+LBU_98_6;28;29;bruin;brown;sand;brown;brown;;0
+LBU_98_6;29;30;bruin;brown;sand;brown;brown;;0
+LBU_98_6;30;31;bruin;brown;sand;brown;brown;;0
+LBU_98_6;31;32;bruin;brown;sand;brown;brown;;0
+LBU_98_6;32;33;bruin;brown;sand;brown;brown;;0
+LBU_98_6;33;34;bruin;brown;sand;brown;brown;;0
+LBU_98_6;34;35;bruin;brown;sand;brown;brown;;0
+LBU_98_6;35;36;bruin;brown;sand;brown;brown;;0
+LBU_98_6;36;37;bruin grof;brown coarse;sand;brown;brown;;0
+LBU_98_6;37;38;licht bruin ,grof, leem;light brown, coarse , loamy;sand;light brown;light brown;;0
+LBU_98_6;38;39;licht bruin ;light brown;sand;light brown;light brown;;0
+LBU_98_6;39;40;licht bruin ;light brown;sand;light brown;light brown;;0
+LBU_98_6;40;41;licht bruin grof;light brown coarse;sand;light brown;light brown;;0
+LBU_98_6;41;42;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_98_6;42;43;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_98_6;43;44;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_98_6;44;45;licht bruin;light brown;sand;light brown;light brown;;0
+LBU_98_7;16;17;geel + 5% grind;yellow + 5 % gravel;sand;yellow;yellow;;0
+LBU_98_7;17;18;geel ;yellow;sand;yellow;yellow;;0
+LBU_98_7;18;19;geel + 5%grind;yellow + 5 % gravel;sand;yellow;yellow;;0
+LBU_98_7;19;20;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;20;21;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;21;22;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;22;23;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;23;24;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;24;25;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;25;26;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;26;27;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;27;28;geel;yellow;sand;yellow;yellow;;0
+LBU_98_7;28;29;geel + weinig leem;yellow + little clay;sand;yellow;yellow;;0
+LBU_98_7;29;30;geel grijs;gray;sand;gray;gray;;0
+LBU_98_7;30;31;grijs geel;gray yellow;sand;gray yellow;gray yellow;;0
+LBU_98_7;31;32;bruin;brown;sand;brown;brown;;0
+LBU_98_7;32;33;bruin 5%>600µ;brown 5 % > 600µ;sand;brown;brown;;0
+LBU_98_7;33;34;bruin 5%>600µ;brown 5 % > 600µ;sand;brown;brown;;0
+LBU_98_7;34;35;bruin 5%>600µ;brown 5 % > 600µ;sand;brown;brown;;0
+LBU_98_7;35;36;bruin;brown;sand;brown;brown;;0
+LBU_98_7;36;37;bruin;brown;sand;brown;brown;;0
+LBU_98_7;37;38;bruin;brown;sand;brown;brown;;0
+LBU_98_7;38;38.5;zwart + 60% leem;Black + 60 % clay;sand;gray;gray;;0
+LBU_98_7;38.5;39;zwart + 90% leem;Black + 90 % clay;sand;gray;gray;;0
+MHZ_08_01;0;0.4;Zand, matig fijn, zwak siltig, sterk grindig, bruin;Sand , finely weak silty , gravelly strong , brown;sand;brown;brown;;0
+MHZ_08_01;0.4;2.6;Zand, zeer fijn, zwak siltig, matig grindig, zwak leemhoudend, grijs;Sand, very fine, silty, weakly , moderately gravelly , weakly loamy , gray;sand;gray;gray;;0
+MHZ_08_01;2.6;6.2;Zand, zeer fijn, zwak siltig, matig grindig, lichtbruin, af en toe kleilensjes;Sand, very fine, silty, weakly , moderately gravelly , light brown , occasionally clay lenses or flakes;sand;light brown;light brown;;0
+MHZ_08_01;6.2;8;Zand, zeer fijn, zwak siltig, lichtbruin, af en toe kleilensjes;Sand, very fine, silty weak , light brown , occasionally clay lenses or flakes;sand;light brown;light brown;;0
+MHZ_08_02;0;1.1;Zand, matig fijn, zwak siltig, sterk grindig, zwak leemhoudend, geelbruin;Sand , finely weak silty , gravelly strong , light loamy , yellow-brown;sand;yellow brown;yellow brown;;0
+MHZ_08_02;1.1;1.5;Zand, matig fijn, zwak siltig, matig grindig, witbeige;Sand , finely weak silty , moderately gravelly , white-beige;sand;white beige;white beige;;0
+MHZ_08_02;1.5;4;Zand, matig fijn, zwak siltig, matig grindig, grijsbruin;Sand , finely weak silty , moderately gravelly , gray-brown;sand;gray brown;gray brown;;0
+MHZ_08_02;4;6;Zand, matig fijn, zwak siltig, zwak grindig, grijsbruin;Sand , moderately fine, silty weak , weak gravelly , gray-brown;sand;gray brown;gray brown;;0
+MHZ_08_02;6;8;Zand, zeer fijn, zwak siltig, zwak grindig, lichtgrijs;Sand, very fine, silty, weak , weak gravelly , gray;sand;gray;gray;;0
+MHZ_08_03;0;0.9;Zand, matig fijn, zwak siltig, sterk grindig, zwak leemhoudend, bruin;Sand , finely weak silty , gravelly strong , light loamy , brown;sand;brown;brown;;0
+MHZ_08_03;0.9;2;Zand, zeer fijn, zwak siltig, zwak grindig, zwak leemhoudend, geelbruin;Sand, very fine, silty, weak , weak gravelly , weakly loamy , yellow-brown;sand;yellow brown;yellow brown;;0
+MHZ_08_03;2;3.9;Zand, matig fijn, zwak siltig, lichtgrijs;Sand , finely weak silty , light gray;sand;light gray;light gray;;0
+MHZ_08_03;3.9;5;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+MHZ_08_03;5;7;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+MHZ_08_03;7;10;Zand, matig fijn, zwak siltig, lichtbruin;Sand , finely weak silty , light;sand;light brown;light brown;;0
+MHZ_08_04;0;4.6;Zand, matig grof, zwak siltig, sterk grindig, zwak leemhoudend, bruin;Sand, medium coarse , weak silty , gravelly strong , weak loamy , brown;sand;brown;brown;;0
+MHZ_08_04;4.6;5.5;Zand, zeer grof, zwak siltig, zwak grindig, zwak leemhoudend, bruin;Sand, very coarse , weak silty , gravelly weak weak loamy , brown;sand;brown;brown;;0
+MHZ_08_04;5.5;6.6;Zand, zeer fijn, zwak siltig, lichtbruin;Sand, very fine, silty weak , light brown;sand;light brown;light brown;;0
+MHZ_08_04;6.6;11;Zand, zeer fijn, zwak siltig, lichtbruin-beige;Sand, very fine, silty weak , light - beige;sand;light beige;beige;;0
+MHZ_12_01;0;2;Zand, matig fijn, zwak siltig, zwak houthoudend, zwartbruin, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , black brown , Boring Machine;sand;black brown ;black brown ;weak wood;0
+MHZ_12_01;2;5;Zand, matig fijn, zwak siltig, zwak houthoudend, resten oer, roodbruin, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , residues of iron crust, reddish brown, Boring Machine;sand;reddish brown;red brown;weak wood;0
+MHZ_12_01;5;6;Zand, matig fijn, zwak siltig, zwak houthoudend, resten kalk, lenzen leem, witbruin, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , waste lime, clay lenses , whitish brown , Boring Machine;sand;white brown;white brown;weak wood;0
+MHZ_12_01;6;7;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, witgrijs, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , waste lime, white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_01;7;10;Zand, zeer fijn, zwak siltig, matig houthoudend, resten kalk, witgrijs, Machinale Boring;Sand, very fine, silty, weak , moderate wood-containing , waste lime, white-gray , Boring Machine;sand;white gray;white gray;moderate wood;0
+MHZ_12_01;10;11;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, resten oer, witgrijs, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , lime residues , residues of iron crust, white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_01;11;12;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, resten oer, witgrijs, Machinale Boring;Sand, very fine, silty, weak , weak wood content, lime residues, residues of iron crust, white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_01;12;12.5;Zand, matig fijn, zwak siltig, resten kalk, zwak houthoudend, witgrijs, Machinale Boring;Sand , finely weak silty , calcareous remains weak wood-containing , white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_01;12.5;15;Zand, matig fijn, zwak siltig, resten kalk, sterk veenhoudend, witgrijs, Machinale Boring;Sand, finely weak silty, lime residues, high peat content , white-gray , Boring Machine;sand;white gray;white gray;high peat;0
+MHZ_12_01;15;18;Zand, matig fijn, zwak siltig, resten kalk, zwak veenhoudend, witgrijs, Machinale Boring;Sand , finely weak silty , lime residues, weak peat content, white-gray , Boring Machine;sand;white gray;white gray;weak peat;0
+MHZ_12_01;18;26;Zand, matig fijn, zwak siltig, resten kalk, sterk veenhoudend, witgrijs, Machinale Boring;Sand, finely weak silty, lime residues, high peat content, white-gray, Boring Machine;sand;white gray;white gray;high peat;0
+MHZ_12_01;26;26.3;Zand, matig fijn, zwak siltig, resten kalk, zwak veenhoudend, lenzen klei, witgrijs, Machinale Boring;Sand, finely weak silty, lime residue, weak peat content, clay lenses, white-gray , Boring Machine;sand;white gray;white gray;weak peat;0
+MHZ_12_01;26.3;26.4;Klei, zwak siltig, donkerbruin, Machinale Boring;Clay , silty weak , dark , Boring Machine;clay;dark brown;dark brown;;0
+MHZ_12_01;26.4;35;Zand, matig fijn, zwak siltig, zwak houthoudend, zwartgrijs, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , black gray , Boring Machine;sand;black gray ;black gray ;weak wood;0
+MHZ_12_02;0;4.5;Zand, matig fijn, zwak siltig, sterk grindig, grijsbruin, Machinale Boring, enkele steen;Sand , moderately fine, silty weak , strong gravelly , gray-brown , Boring Machine , single stone;sand;gray brown;gray brown;;0
+MHZ_12_02;4.5;4.8;Leem, zwak zandig, geel, Machinale Boring;Loam , weak sandy, yellow , Boring Machine;loam;yellow;yellow;;0
+MHZ_12_02;4.8;6.5;Zand, matig fijn, zwak siltig, zwak grindig, zwak houthoudend, grijsbeige, Machinale Boring;Sand , finely weak silty , gravelly weak , weak wood content, greige , Boring Machine;sand;greige ;beige;weak wood;0
+MHZ_12_02;6.5;7;Grind, zeer grof, sterk zandig, zwak houthoudend, grijs, Machinale Boring, enkele steen;Gravel , very coarse , very sandy , light wood-containing , gray, Boring Machine , single stone;gravel;gray;gray;weak wood;0
+MHZ_12_02;7;8;Grind, zeer grof, sterk zandig, zwak houthoudend, matig leemhoudend, grijs, Machinale Boring;Gravel , very coarse , very sandy , light wood-containing , medium loamy , gray, Boring Machine;gravel;gray;gray;weak wood;0
+MHZ_12_02;8;10;Zand, matig fijn, zwak siltig, zwak grindig, zwak houthoudend, resten kalk, witbruin, Machinale Boring;Sand , finely weak silty , gravelly weak , weak wood-containing , lime residues , whitish brown , Boring Machine;sand;whitish brown ;white brown ;weak wood;0
+MHZ_12_02;10;14.5;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, witbeige, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , lime residues , white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_02;14.5;15;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, brokken oer, witbeige, Machinale Boring;Sand, very fine, silty, weak, weak wood content, residues of lime, chunks of iron crust, white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_02;15;16;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, witbeige, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , lime residues , white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_02;16;18;Zand, matig fijn, zwak siltig, zwak houthoudend, resten kalk, witgrijs, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , waste lime, white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_02;18;21;Zand, matig fijn, zwak siltig, matig houthoudend, resten kalk, witgrijs, Machinale Boring;Sand , moderately fine, silty weak , moderate wood-containing , waste lime, white-gray , Boring Machine;sand;white gray;white gray;moderate wood;0
+MHZ_12_02;21;24.5;Zand, zeer fijn, zwak siltig, zwak houthoudend, resten kalk, witbeige, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , lime residues , white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_02;24.5;27.5;Zand, matig fijn, zwak siltig, zwak houthoudend, zwartbeige, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , black beige , Boring Machine;sand;black beige ;black;weak wood;0
+MHZ_12_02;27.5;31.5;Zand, matig fijn, zwak siltig, sterk houthoudend, resten kalk, witbeige, Machinale Boring;Sand , moderately fine, silty weak , strong wood-containing , lime residues , white-beige , Boring Machine;sand;white beige;white beige;high wood;0
+MHZ_12_02;31.5;35;Zand, matig fijn, zwak siltig, sterk houthoudend, resten kalk, lenzen klei, witbruin, Machinale Boring;Sand , moderately fine, silty weak , strong wood-containing , waste lime, clay lenses , whitish brown , Boring Machine;sand;white brown;white brown;high wood;0
+MHZ_12_03;0;4;Zand, matig fijn, zwak siltig, sterk grindig, zwak steenhoudend, grijsbruin, Machinale Boring;Sand , finely weak silty , gravelly strong , weak into stone , gray-brown , Boring Machine;sand;gray brown;gray brown;;0
+MHZ_12_03;4;7.5;Zand, matig fijn, zwak siltig, zwak grindig, zwak houthoudend, grijsbruin, Machinale Boring;Sand , finely weak silty , gravelly weak , weak wood-containing , gray-brown , Boring Machine;sand;gray brown;gray brown;weak wood;0
+MHZ_12_03;7.5;10;Zand, zeer fijn, zwak siltig, zwak houthoudend, lenzen leem, geelgrijs, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , clay lenses , gray , Boring Machine;sand;gray;gray;weak wood;0
+MHZ_12_03;10;11;Zand, zeer fijn, zwak siltig, zwak houthoudend, zwartgrijs, Machinale Boring;Sand, very fine, silty, weak , weak wood-containing , black gray , Boring Machine;sand;black gray ;black gray ;weak wood;0
+MHZ_12_03;11;14;Zand, zeer fijn, zwak siltig, resten kalk, zwak houthoudend, witgrijs, Machinale Boring;Sand, very fine, weak silty , calcareous remains weak wood-containing , white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_03;14;15.5;Zand, zeer fijn, zwak siltig, resten kalk, zwak veenhoudend, witgrijs, Machinale Boring;Sand, very fine, weak silty, lime residues, weak peat content, white-gray, Boring Machine;sand;white gray;white gray;weak peat;0
+MHZ_12_03;15.5;23.5;Zand, matig fijn, zwak siltig, resten kalk, matig veenhoudend, witgrijs, Machinale Boring;Sand, finely weak silty , lime residues, moderate peat content, white-gray, Boring Machine;sand;white gray;white gray;moderate peat;0
+MHZ_12_03;23.5;24.25;Volledig hout, zwart, Machinale Boring;Full wood , black, Boring Machine;lignite;black;black;full;0
+MHZ_12_03;24.25;24.5;Zand, zeer fijn, zwak siltig, bruin, Machinale Boring;Sand, very fine, weak silty , brown, Boring Machine;sand;brown;brown;;0
+MHZ_12_03;24.5;26.75;Volledig hout, zwart, Machinale Boring;Full wood , black, Boring Machine;lignite;black;black;full;0
+MHZ_12_03;26.75;31;Zand, matig fijn, zwak siltig, zwak houthoudend, zwartgrijs, Machinale Boring;Sand , moderately fine, silty weak , weak wood-containing , black gray , Boring Machine;sand;black gray ;black gray ;weak wood;0
+MHZ_12_03;31;31.8;Zand, matig fijn, zwak siltig, matig veenhoudend, bruingrijs, Machinale Boring;Sand , moderately fine, silty weak , moderate peat content, brown gray , Boring Machine;sand;brown gray ;gray brown;moderate peat;0
+MHZ_12_03;31.8;31.83;Volledig klei, grijs, Machinale Boring;Fully clay , gray , Boring Machine;clay;gray;gray;;0
+MHZ_12_03;31.83;32.4;Zand, zeer fijn, zwak siltig, resten kalk, witbeige, Machinale Boring;Sand, very fine, silty weak , lime residues , white-beige , Boring Machine;sand;white beige;white beige;;0
+MHZ_12_03;32.4;32.43;Volledig klei, grijs, Machinale Boring;Fully clay , gray , Boring Machine;clay;gray;gray;;0
+MHZ_12_03;32.43;32.95;Zand, zeer fijn, zwak siltig, resten kalk, witbeige, Machinale Boring;Sand, very fine, silty weak , lime residues , white-beige , Boring Machine;sand;white beige;white beige;;0
+MHZ_12_03;32.95;33.5;Zand, zeer fijn, zwak siltig, resten kalk, laagjes klei, witbeige, Machinale Boring;Sand, very fine, silty weak , residual lime, clay layers , white-beige , Boring Machine;sand;white beige;white beige;;0
+MHZ_12_03;33.5;34;Zand, zeer fijn, zwak siltig, resten kalk, matig houthoudend, laagjes klei, witbeige, Machinale Boring;Sand, very fine, silty weak , lime residues , wood-containing medium , layered clay , white-beige , Boring Machine;sand;white beige;white beige;moderate wood;0
+MHZ_12_03;34;35;Zand, zeer fijn, zwak siltig, resten kalk, matig houthoudend, witbeige, Machinale Boring;Sand, very fine, silty weak , lime residues , wood-containing medium , white-beige , Boring Machine;sand;white beige;white beige;moderate wood;0
+MHZ_12_04;0;5;Zand, zeer fijn, zwak siltig, sterk grindig, lenzen leem, zwak steenhoudend, grijsbruin, Machinale Boring;Sand, very fine, silty, weak , strong gravelly , clay lenses , weak rock loving , gray-brown , Boring Machine;sand;gray brown ;gray brown ;;0
+MHZ_12_04;5;6.5;Zand, matig fijn, zwak siltig, zwak grindig, grijsrood, Machinale Boring;Sand , moderately fine, silty weak , weak gravelly , gray red , Boring Machine;sand;gray red ;gray;;0
+MHZ_12_04;6.5;12;Zand, zeer fijn, zwak siltig, resten kalk, zwak houthoudend, zwak leemhoudend, witbeige, Machinale Boring;Sand, very fine, silty weak , lime residues , wood-containing weak weak loamy , white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_04;12;14.5;Zand, matig fijn, zwak siltig, resten kalk, zwak houthoudend, donker witgrijs, Machinale Boring;Sand , finely weak silty , lime residues, weak wood content, dark white-gray , Boring Machine;sand;white gray;white gray;weak wood;0
+MHZ_12_04;14.5;18;Zand, matig fijn, zwak siltig, resten kalk, zwak veenhoudend, donker witgrijs, Machinale Boring;Sand , finely weak silty , lime residues, weak peat content, dark white-gray , Boring Machine;sand;white gray;white gray;weak peat;0
+MHZ_12_04;18;27;Zand, matig fijn, zwak siltig, zwak veenhoudend, donker bruinbeige, Machinale Boring;Sand, moderately fine, silty weak, weak peat content, dark brown beige, Boring Machine;sand;dark brown beige;dark brown;weak peat;0
+MHZ_12_04;27;29;Zand, matig fijn, zwak siltig, resten kalk, zwak houthoudend, lenzen leem, witbeige, Machinale Boring;Sand , finely weak silty , lime content, weak wood content , clay lenses , white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_04;29;30.5;Zand, matig fijn, zwak siltig, resten kalk, zwak houthoudend, witbeige, Machinale Boring;Sand, finely weak silty, lime residue,  weak wood content, white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_12_04;30.5;35;Zand, zeer fijn, zwak siltig, resten kalk, zwak houthoudend, witbeige, Machinale Boring;Sand, very fine, weak silty , lime residue, weak wood content, white-beige , Boring Machine;sand;white beige;white beige;weak wood;0
+MHZ_16_01;0;8.9;"Leem, vast, matig zandig, sterk
+grindhoudend, matig steenhoudend,
+bruin, Pulsinstallatie machinaal";;;;brown;;0

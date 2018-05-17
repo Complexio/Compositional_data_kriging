@@ -1,0 +1,86 @@
+"hole_id";"hole_path";"max_depth";"x";"y";"z";"depth_water_table";"date";"drilling_company";"Project";"comment"
+"LBU_01_1";;45.00;237161.74;186909.76;64.95;;1/1/2001 0:00:00;;;"Z=52 ?  64.95 ?"
+"LBU_01_2";;35.00;237097.83;187367.49;65.50;;1/1/2001 0:00:00;;;"Z=65.5 ?"
+"LBU_01_3";;35.00;236918.58;187646.14;65.17;;1/1/2001 0:00:00;;;" Z non consistent with geology Z=65.17 ?"
+"LBU_02_1";;41.00;236042.26;187086.93;89.46;;1/7/2002 0:00:00;"GEOTRON";"PROJ-002449";
+"LBU_02_2";;41.00;235949.46;186619.86;87.94;;1/7/2002 0:00:00;"GEOTRON";"PROJ-002449";
+"LBU_02_3";;41.00;236494.42;186794.28;86.53;;1/7/2002 0:00:00;"GEOTRON";"PROJ-002449";
+"LBU_02_4";;41.00;236428.80;186453.25;86.87;;1/7/2002 0:00:00;"GEOTRON";"PROJ-002449";
+"LBU_03_01";;32.00;237597.68;188394.13;76.82;;22/5/2003 0:00:00;"GEOTRON";"PROJ-002869";"Stalen verloren tot 12m, nieuwe boring LBU 03/1B tot 12m"
+"LBU_03_02";;31.00;237767.15;188313.56;76.60;;26/5/2003 0:00:00;"GEOTRON";"PROJ-003303";
+"LBU_05_01";;64.00;236324.97;187048.59;79.09;6.00;1/6/2005 0:00:00;"GEOTRON";"PROJ-002869";
+"LBU_05_02";;50.00;236311.53;187257.45;78.03;5.00;7/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_03";;50.00;236349.85;187475.26;75.91;2.50;9/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_04";;50.00;236349.43;187714.10;75.85;5.00;13/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_05";;50.00;236364.93;187940.19;75.38;3.50;15/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_06";;50.00;236422.93;187176.29;78.31;5.00;17/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_07";;50.00;236539.70;187057.46;78.15;6.50;21/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_08";;50.00;236535.65;187315.58;77.00;4.50;23/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_09";;50.00;236535.67;187522.82;76.12;3.75;28/6/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_10";;53.00;236537.83;187708.78;76.76;3.50;7/7/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_11";;50.00;236549.07;188018.73;76.61;3.50;12/7/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_12";;50.00;236614.99;186915.71;77.42;4.75;5/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_13";;50.00;236640.75;187412.42;76.49;5.00;7/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_14";;50.00;236698.40;187085.79;77.68;6.25;9/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_15";;50.00;236731.94;187293.52;77.35;5.00;14/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_16";;50.00;236791.93;187524.95;77.54;5.75;15/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_17";;42.00;236762.04;187701.35;77.07;6.00;20/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_18";;50.00;236792.47;187883.45;75.66;6.25;22/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_19";;56.00;236934.55;187230.08;76.78;5.25;23/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_20";;50.00;236993.16;187499.98;77.06;5.50;28/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_21";;50.00;237023.10;186976.41;78.00;6.75;22/8/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_22";;42.00;237050.11;187685.31;76.56;5.50;29/9/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_23";;50.00;237161.80;187211.21;77.49;8.00;2/10/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_24";;50.00;237123.22;187525.62;77.67;6.25;5/10/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_25";;54.00;237323.43;187493.33;77.48;7.00;24/8/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_26";;50.00;237247.12;187036.19;72.66;1.50;7/10/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_27";;50.00;237320.06;187180.41;73.85;5.00;28/11/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_28";;50.00;237477.09;187396.09;77.56;8.00;30/11/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_29";;50.00;237320.06;187696.20;75.34;5.25;6/12/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_05_30";;50.00;237524.14;187508.92;76.88;6.75;2/12/2005 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_07_01";;45.00;236706.78;186705.46;72.82;;1/1/2007 0:00:00;"GEOTRON";"PROJ-003828";
+"LBU_07_02";;45.00;236769.76;186757.57;73.46;;1/1/2007 0:00:00;"GEOTRON";"PROJ-005316";
+"LBU_07_03";;45.00;236881.59;186761.79;74.95;;1/1/2007 0:00:00;"GEOTRON";"PROJ-005316";
+"LBU_81_1";;50.00;236603.64;187157.70;88.00;;1/1/1981 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx)"
+"LBU_81_2";;45.00;237004.30;187124.90;90.50;;1/1/1981 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - z=90? z=51.5?"
+"LBU_81_3";;50.00;237186.92;187619.64;90.10;;1/1/1981 0:00:00;"Van Heugten - Hamont";;"z=50?"
+"LBU_81_5";;50.00;236661.13;187583.37;87.50;;1/1/1981 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx)- other sources : z= 87.5 - z=49.5?"
+"LBU_81_6";;50.00;236736.14;187984.93;88.50;;1/1/1981 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx)- other sources : z=88.3 z=53.5?"
+"LBU_86_4";;64.00;;;;;1/1/1986 0:00:00;;;
+"LBU_86_5";;35.00;;;;;1/1/1986 0:00:00;;;"(Waterput)"
+"LBU_87_1";;50.00;236475.86;187851.32;83.82;10.00;1/11/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=87.5 z=49.82? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_2";;50.00;236440.15;187418.09;88.33;13.30;1/11/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=89.4 z=50.33? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_3";;50.00;236375.99;186963.22;89.08;14.20;1/11/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=90 z=49.08? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_4";;50.00;236759.62;186952.35;88.13;14.30;1/11/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=90 z=52.13? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_5";;50.00;236888.40;187382.86;88.17;14.80;1/12/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=88.9 z=50.17? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_6";;50.00;236973.56;187822.62;89.30;16.00;1/12/1987 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=90 z=49.3? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_7";;50.00;237067.51;188281.61;90.11;17.00;1/1/1988 0:00:00;"Van Heugten - Hamont";;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=90 z=50.11? - Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_87_8";;35.00;;;;0.60;1/1/1988 0:00:00;"Van Heugten - Hamont";;"Droogboring in 't grind -  Spoelboring in 't zand"
+"LBU_96_1";;37.00;236596.70;187871.26;76.56;;1/1/1996 0:00:00;;;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=76.6 Z=49.56?"
+"LBU_96_2";;40.60;237078.31;187981.87;72.68;;1/1/1996 0:00:00;;;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=72.7 Z=45.68?"
+"LBU_96_3";;41.00;236872.97;187035.61;71.95;;1/1/1996 0:00:00;;;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=72 Z=51.95?"
+"LBU_96_4";;41.00;236621.46;187217.66;77.89;;1/1/1996 0:00:00;;;"Suspected height - according triangulation contour (from W. Deckx) - other sources z=77.9 Z=46.89?"
+"LBU_98_1";;46.00;237108.18;186629.38;90.00;;1/1/1998 0:00:00;;;"?=B1_98 -Suspected height - according triangulation contour (from W. Deckx) - other sources z=Z=55 ?"
+"LBU_98_2";;45.00;237293.54;186624.33;91.50;;1/1/1998 0:00:00;;;"?=B2_98 - Suspected height - according triangulation contour (from W. Deckx) - other sources z=92.2 Z= 56.5?"
+"LBU_98_3";;;237685.91;186738.29;75.00;;1/1/1999 0:00:00;;;"? B4? =98_3?"
+"LBU_98_4";;41.00;237483.81;186971.11;90.00;;1/1/1998 0:00:00;;;"?=B4_98 Suspected height - according triangulation contour (from W. Deckx) - other sources Z=59?"
+"LBU_98_5";;40.00;237651.57;187328.74;90.00;;1/1/1998 0:00:00;;;"?=B5_98 - Suspected height - according triangulation contour (from W. Deckx) - other sources Z=55?"
+"LBU_98_6";;45.00;237302.15;187330.03;89.00;;1/1/1998 0:00:00;;;"?=B6_98 Suspected height - according triangulation contour (from W. Deckx) - other sources z=90 Z=53?"
+"LBU_98_7";;39.00;237450.27;187647.15;90.00;;1/1/1998 0:00:00;;;"?=B7_98 Suspected height - according triangulation contour (from W. Deckx) - other sources z=90.8"
+"MHZ_08_01";;30.00;237111.28;186942.53;74.83;;20/8/2008 0:00:00;"GEOTRON";"PROJ-005316";
+"MHZ_08_02";;33.00;236976.58;187018.70;77.97;;20/8/2008 0:00:00;"GEOTRON";"PROJ-005316";
+"MHZ_08_03";;30.00;236858.81;187084.25;77.51;;20/8/2008 0:00:00;"GEOTRON";"PROJ-005316";
+"MHZ_08_04";;30.00;237007.54;187115.81;78.58;;20/8/2008 0:00:00;"GEOTRON";"PROJ-005316";
+"MHZ_08_05";;29.00;237205.34;187140.91;73.32;;1/1/2008 0:00:00;"GEOTRON";"PROJ-005316";
+"MHZ_12_01";;35.00;237199.99;187300.00;74.54;;22/10/2012 0:00:00;"GEOTRON";"PROJ-008226";
+"MHZ_12_02";;35.00;237200.00;187425.02;79.02;;30/10/2012 0:00:00;"GEOTRON";"PROJ-008226";
+"MHZ_12_03";;35.00;237380.00;187560.00;76.68;;24/10/2012 0:00:00;"GEOTRON";"PROJ-008226";
+"MHZ_12_04";;35.00;237424.99;187279.99;77.04;;26/10/2012 0:00:00;"GEOTRON";"PROJ-008226";
+"MHZ_16_01";;35.00;237598.40;187699.60;90.91;22.00;19/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_02";;35.00;237434.40;187775.80;89.91;22.00;26/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_03";;35.00;237629.70;187554.00;83.71;16.00;17/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_04";;35.00;237482.70;187585.60;78.82;5.50;24/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_05";;35.00;237238.80;187649.60;78.74;4.00;3/6/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_06";;35.00;237416.70;187492.50;76.80;6.00;23/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_07";;35.00;237224.95;187521.48;78.69;10.00;6/6/2016 0:00:00;"GEOTRON";"PROJ-009323";
+"MHZ_16_08";;35.00;237541.40;187315.00;74.30;5.00;11/5/2016 0:00:00;"GEOTRON";"PROJ-009323";
