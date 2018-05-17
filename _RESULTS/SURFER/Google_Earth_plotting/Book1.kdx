@@ -1,0 +1,27 @@
+Layout {
+  FileType : "delimited"
+  Delimiter : ";"
+  CoalesceDelimiters : "1"
+  Latitude : "1"
+  Longitude : "2"
+  SkipRows : "1"
+  TextCodec : "System"
+  FieldDefinitions {
+    0 {
+      Name : "hole_id"
+      Type : "string"
+    }
+    1 {
+      Name : "Latitude"
+      Type : "string"
+    }
+    2 {
+      Name : "Longitude"
+      Type : "string"
+    }
+    3 {
+      Name : "Altitude"
+      Type : "double"
+    }
+  }
+}

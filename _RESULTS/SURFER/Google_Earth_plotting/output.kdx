@@ -1,0 +1,26 @@
+Layout {
+  FileType : "fixed width"
+  Column width : "21"
+  Latitude : "1"
+  Longitude : "2"
+  SkipRows : "1"
+  TextCodec : "System"
+  FieldDefinitions {
+    0 {
+      Name : "                     "
+      Type : "string"
+    }
+    1 {
+      Name : "  50 58 15.38001     "
+      Type : "string"
+    }
+    2 {
+      Name : "   5 37 52.15265     "
+      Type : "string"
+    }
+    3 {
+      Name : "       91.500"
+      Type : "string"
+    }
+  }
+}
