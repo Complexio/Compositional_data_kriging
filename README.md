@@ -5,3 +5,6 @@ Optimal geostatistical interpolation of complete grain-size distributions for es
 ## Idea
 Finding a better way to interpolate compositional data (here in the form of grain size data) by using centred log ratio (clr) transformation and PCA on the data, using ordinary kriging to interpolate them and finally reversing the PCA and clr transformation to obtain compositional data.
 
+### PCA back calculation link
+https://stats.stackexchange.com/questions/229092/how-to-reverse-pca-and-reconstruct-original-variables-from-several-principal-com
+
