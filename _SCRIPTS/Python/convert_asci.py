@@ -7,9 +7,9 @@ import pandas as pd
 # Set flag as "csv" or "xlsx" to convert .asc files accordingly
 flag = "xlsx"
 # Set root directory (don't forget to include a forward slash at the end!)
-rootDir = "ASCI/"
+rootDir = "../Python/"
 # Set directory to save converted files to (forward slash at end!)
-saveDir = "CONVERTED/"
+saveDir = "Python/"
 # ========================================================================
 
 # Create saveDir if nonexisting
