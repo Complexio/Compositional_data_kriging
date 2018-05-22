@@ -8,7 +8,9 @@ import re
 import xarray # will be needed when panels in pandas gets deprecated
 
 
-def pre_processing(file, save_data=False, save_name=None):
+def pre_processing(file, save_data=False, save_name=None, 
+                   column_range=["z_1000", "z_710", "z_500", "z_355", "z_250", 
+                   "z_180", "z_125", "z_90", "z_63", "z_0"]):
     """Pre-processing module of new approach for interpolation 
     of compositional data by ordinary kriging
 
@@ -45,7 +47,7 @@ def pre_processing(file, save_data=False, save_name=None):
 
     for key, value in df_dict.items():
         # TO DO: Change column range
-        df_dict_GSD[key] = value.loc[:, df_dict[key].columns[9:19]]
+        df_dict_GSD[key] = value.loc[:, set(column_range)]
     
     # Replace zero by very small value
     for key, value in df_dict_GSD.items():
@@ -54,6 +56,7 @@ def pre_processing(file, save_data=False, save_name=None):
     # Correct percentages so they sum up to exactly 100
     for key, value in df_dict_GSD.items():
         df_dict_GSD[key] = value.divide(value.sum(axis=1), axis=0) * 100
+        print(value.shape)
     
     
     # ------------------
@@ -87,18 +90,19 @@ def pre_processing(file, save_data=False, save_name=None):
         n_comp = min(data.shape)
         pca = PCA(n_components = n_comp)
         pca.fit(data)
-        print(pca.fit(data))
+        #print(pca.fit(data))
 
+        # Determine PCA expleined variance ratio
         dict_pca[key] = pca
         df_dict_variance[key] = pca.explained_variance_ratio_
 
-        print(pca.explained_variance_ratio_)
+        #print(pca.explained_variance_ratio_)
 
         variance_sum = 0
         variance_n_comp = 0
-        print(data.shape[1])
+        #print(data.shape[1])
         for v in range(n_comp):
-            print(pca.explained_variance_ratio_[v])
+            #print(pca.explained_variance_ratio_[v])
             if variance_sum < 0.95:
                 variance_sum += pca.explained_variance_ratio_[v]
                 variance_n_comp += 1
@@ -109,10 +113,10 @@ def pre_processing(file, save_data=False, save_name=None):
     df_dict_pca = {}
 
     for key, value in dict_pca.items():
-        print(key)
-        print(value)
-        print(df_dict_GSD_clr[key])
-        print(value.transform(df_dict_GSD_clr[key]))
+        #print(key)
+        #print(value)
+        #print(df_dict_GSD_clr[key])
+        #print(value.transform(df_dict_GSD_clr[key]))
         df_dict_pca[key] = pd.DataFrame(value.transform(df_dict_GSD_clr[key]), 
                                         # Change range to (1, max # params + 1)
                                         columns=["PC" + "{:02}".format(i)
@@ -121,11 +125,13 @@ def pre_processing(file, save_data=False, save_name=None):
     
     df_dict_pca_merge = {}
 
-    print(df_dict)
+    #print(df_dict)
 
     for key, value in df_dict_pca.items():
         # TO DO: Check this line 'df_dict["GZ/Sheet1"]'
-        df_dict_pca_merge[key] = pd.merge(df_dict["GZ"][["lat", "lon"]], 
+        # Does matter from which file the coordiantes are taken since 
+        # this differs from layer to layer
+        df_dict_pca_merge[key] = pd.merge(df_dict[key][["lat", "lon"]], 
                                           value, 
                                           left_index=True, 
                                           right_index=True)
@@ -137,16 +143,17 @@ def pre_processing(file, save_data=False, save_name=None):
     # ---------
     # SAVE DATA
     # ---------
-    print(df_dict_pca_merge)
+    #print(df_dict_pca_merge)
     
     if save_data == True:
         if save_name != None:
-            writer = pd.ExcelWriter("../_RESULTS/" + save_name + ".xlsx")
+            writer = pd.ExcelWriter("../_RESULTS/PCA/" + save_name + ".xlsx")
         else:
-            writer = pd.ExcelWriter("../_RESULTS/Berg_pca.xlsx")
+            writer = pd.ExcelWriter("../_RESULTS/PCA/Berg_pca.xlsx")
 
         for key, value in df_dict_pca_merge.items():
             value.to_excel(writer, key)
+            print("Hello", value.shape)
 
         df_variance.to_excel(writer, "pca_variance")
         writer.close()
@@ -224,7 +231,6 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
             
     print("gridpoints:", len(points))
     
-    
     # -----------
     # REVERSE PCA
     # -----------
@@ -272,7 +278,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
 
     results = {}
     # TO DO: Check why size of range == 10 (10 grain size classes)
-    for i in range(10): # TO DO: revert to 10
+    for i in range(10):
         result = np.empty(df_dict_pca_kriged[component].shape)
         X_index = 0
         #print(X_ratio[0][i])
@@ -290,7 +296,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
             f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp.asc"
+                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test2.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
@@ -485,6 +491,7 @@ def pre_processing_debug(file, save_data=False, save_name=None):
         pca.fit(data)
         print(pca.fit(data))
 
+        # Determine PCA expleined variance ratio
         dict_pca[key] = pca
         df_dict_variance[key] = pca.explained_variance_ratio_
 
@@ -551,7 +558,7 @@ def pre_processing_debug(file, save_data=False, save_name=None):
 
 
 def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data, 
-                    n_components=5, save_data=False):
+                          n_components=5, save_data=False):
     """Post-processing module of new approach for interpolation 
     of compositional data by ordinary kriging
 
@@ -611,6 +618,8 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     # Create list of PC scores per kriged gridpoint
     points = []
     
+    print(panel.shape)
+
     for i in range(panel.shape[1]):
         for j in range(panel.shape[2]):
             total = []
@@ -619,7 +628,7 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
             points.append(total)
             
     print("gridpoints:", len(points))
-    
+    print("points", points[0])
     
     # -----------
     # REVERSE PCA
@@ -631,6 +640,9 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     model = dict_pca["Sheet2"] # TO DO: revert to code_geol
 
     for total in points:
+        # Dot product of PC scores and transposed Eigenvectors
+        # Number of score and Eigenvectors that is used is determined
+        # by the number of components to use for the reconstruction.
         x = np.dot(total[:n_comp], model.components_[:n_comp, :])
         X.append(x)
     
@@ -647,6 +659,8 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     for x in X:
         x += clr.mean(axis=0).values
         X_clr.append(x)
+
+
     
     # Reverse clr - step 2
     # Calculate GSD percentages 
@@ -686,7 +700,7 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
             f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test.asc"
+                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
