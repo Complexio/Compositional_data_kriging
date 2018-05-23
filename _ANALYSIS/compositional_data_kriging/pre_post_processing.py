@@ -46,8 +46,9 @@ def pre_processing(file, save_data=False, save_name=None,
     df_dict_GSD = {}
 
     for key, value in df_dict.items():
-        # TO DO: Change column range
-        df_dict_GSD[key] = value.loc[:, set(column_range)]
+        df_dict_GSD[key] = value.loc[:, column_range]
+        # Check that column order in df matches order of input column_range
+        assert (column_range == df_dict_GSD[key].columns).all
     
     # Replace zero by very small value
     for key, value in df_dict_GSD.items():
@@ -153,7 +154,7 @@ def pre_processing(file, save_data=False, save_name=None,
 
         for key, value in df_dict_pca_merge.items():
             value.to_excel(writer, key)
-            print("Hello", value.shape)
+            print(value.shape)
 
         df_variance.to_excel(writer, "pca_variance")
         writer.close()
@@ -296,7 +297,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
             f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test2.asc"
+                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test3.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
