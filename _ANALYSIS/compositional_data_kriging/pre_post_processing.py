@@ -297,7 +297,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
             f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test3.asc"
+                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_test_gaussian.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
