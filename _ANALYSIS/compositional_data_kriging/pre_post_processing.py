@@ -148,7 +148,8 @@ def pre_processing(file, save_data=False, save_name=None,
     
     if save_data == True:
         if save_name != None:
-            writer = pd.ExcelWriter("../_RESULTS/PCA/" + save_name + ".xlsx")
+            # TO DO: Change default directory to change with input
+            writer = pd.ExcelWriter(save_name + ".xlsx")
         else:
             writer = pd.ExcelWriter("../_RESULTS/PCA/Berg_pca.xlsx")
 
