@@ -240,7 +240,8 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     X = []
     n_comp=n_components
     # Set PCA model properties to use
-    model = dict_pca[code_geol]
+    # TO DO: Revert to "code_geol"
+    model = dict_pca["train"]
 
     for total in points:
         x = np.dot(total[:n_comp], model.components_[:n_comp, :])
@@ -253,7 +254,8 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
 
     # Reverse clr - step 1
 
-    clr = df_dict_GSD_clr[code_geol]
+     # TO DO: Revert to "code_geol"
+    clr = df_dict_GSD_clr["train"]
     X_clr = []
 
     for x in X:
@@ -296,7 +298,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     if save_data == True:
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
-            f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
+            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
                 + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_spherical.asc"
 
