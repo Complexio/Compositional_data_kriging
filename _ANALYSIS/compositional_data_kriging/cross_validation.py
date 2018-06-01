@@ -1,0 +1,123 @@
+import pandas as pd
+import numpy as np
+from sklearn.decomposition import PCA
+import matplotlib.pyplot as plt
+import seaborn as sns
+import os
+import re
+import xarray # will be needed when panels in pandas gets deprecated
+
+
+# TO DO: (OPTIONAL) Change code so that both .asc as .xlsx files 
+# (+ provided grid info as parameter) can be read into function
+
+def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
+    """Lookup value of borehole value in grid file based 
+    on coordinates of requested borehole sample in input file"""
+    # Open file
+    f = open(grid_file)
+    grid = f.readlines()
+    
+    # Allocate grid info (Surfer grid info) and grid data (actual values)
+    grid_info = grid[0:6]
+    grid_data = grid[6:]
+    
+    # Put grid_info in dictionary
+    grid_info_dict = {}
+
+    for line in grid_info:
+        key, value = line.split()
+        grid_info_dict[key] = float(value)
+    
+    # Put grid_data in numpy matrix
+    data = []
+
+    for line in grid_data:
+        data.append(line.split())
+    
+    data_array = np.array(data, dtype='float')    
+    
+    # Get grain size class from grid_file name
+    regex = re.compile("z_\d+")
+    grain_size_class = regex.search(grid_file).group()
+    
+    # TO DO: select sheet_name based on grid_file's name string
+    lookup_values = pd.read_csv(input_file, sep=";", index_col="hole_id")
+    
+    lon, lat = list(lookup_values.loc[sample, ["lat", "lon"]])
+    grain_size = lookup_values.loc[sample, grain_size_class]
+    
+    # Adjust starting coordinates for the fact that Surfer uses 
+    # half a cellsize offset in the xllcorner and yllcorner values
+    start_lon = grid_info_dict["yllcorner"] + (grid_info_dict["cellsize"] / 2)
+    start_lat = grid_info_dict["xllcorner"] + (grid_info_dict["cellsize"] / 2)
+    
+    # Used formula :
+    # (requested coordinate - corrected starting coordinate) / cellsize = n
+    # n  can be translated to the index in the grid data matrix
+    y_actual = (lon - start_lon) / grid_info_dict["cellsize"] + 1
+    x_actual = (lat - start_lat) / grid_info_dict["cellsize"]
+    
+    y1 = int(np.floor(y_actual))
+    y2 = int(np.ceil(y_actual))
+
+    x1 = int(np.floor(x_actual))
+    x2 = int(np.ceil(x_actual))
+    
+    
+#     y1 = int(np.floor((lon - start_lon) / grid_info_dict["cellsize"]) + 1)
+#     y2 = int(np.ceil((lon - start_lon) / grid_info_dict["cellsize"]) + 1)
+#     x1 = int(np.floor((lat - start_lat) / grid_info_dict["cellsize"]))
+#     x2 = int(np.ceil((lat - start_lat) / grid_info_dict["cellsize"]))
+    # Correction for index out of bounds error
+    if x2 > grid_info_dict["ncols"] - 1:
+        x2 -= 1
+    
+    # Calculate closest distance from actual coordinates to grid point coordiantes
+    # Choose minimal or maximal coordinates if on edge of grid
+    
+    y1_distance = np.abs(y1 - y_actual) 
+    y2_distance = np.abs(y2 - y_actual)
+    
+    x1_distance = np.abs(x1 - x_actual)
+    x2_distance = np.abs(x2 - x_actual)
+    
+    # Get coordinates with minimal distance
+    
+    if y1_distance < y2_distance:
+        y_grid = y1
+    else:
+        y_grid = y2
+    
+    if x1_distance < x2_distance:
+        x_grid = x1
+    else:
+        x_grid = x2
+    
+    # TO DO: Better to use closest point as coordinate to requested coordinate 
+    # than taking the average of 4 nearest points
+    
+    
+    # Create coordinate pairs for four closest points in the grid file
+    if average == True:
+        lookup_couples = []
+        
+        for x in [x1, x2]:
+            for y in [y1, y2]:
+                lookup_couples.append([int(grid_info_dict["nrows"]) - y, x])
+        lookup_couples = np.array(lookup_couples)
+
+        # Lookup values of the closest points in the grid file
+        lookup_values_val = []
+
+        for couple in lookup_couples:
+            lookup_values_val.append(data_array[couple[0], couple[1]])
+
+        # Take the mean of the found values
+        mean_val = np.mean(lookup_values_val)
+    else:
+        mean_val = data_array[int(grid_info_dict["nrows"]) - y_grid, x_grid]
+    
+    f.close()
+    
+    return(mean_val, grain_size)
