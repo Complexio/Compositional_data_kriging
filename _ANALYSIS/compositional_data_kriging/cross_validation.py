@@ -175,7 +175,7 @@ def cross_validation(rootDir):
                 n_test = dirName[-1]
                 #n_test_old = n_test
                 
-                inputfile = f"../_CROSS_VALIDATION/{quarry}/{code_geol}/{quarry}_{code_geol}_{n_test}_test.csv"
+                inputfile = f"../_CROSS_VALIDATION_80-20/{quarry}/{code_geol}/{quarry}_{code_geol}_{n_test}_test.csv"
                 boreholes = list(pd.read_csv(inputfile, 
                                              sep=";", 
                                              index_col="hole_id").index)
