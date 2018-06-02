@@ -224,3 +224,100 @@ def cross_validation(rootDir):
     print("Number of files processed:", n_files)
     
     return(results_test)
+
+
+def calculate_mse_new(CV_results):
+    """Calculate Mean Squared Error based on 
+    cross validation (CV) results"""
+
+    mse_quarry = {}
+
+    for quarry, geol_data in CV_results.items():
+        mse_geol = {}
+
+        for geol, comp_data in geol_data.items():
+            mse_comp = {}
+
+            for comp, train_data in comp_data.items():
+                mse_train = {}
+
+                for train, grain_size_data in train_data.items():
+                    mse_grain_size = {}
+
+                    for grain_size, data in grain_size_data.items():
+                        # MSE calculation
+                        mse_result = ((data["Actual"] - data["Grid"]) ** 2).mean(axis=0)
+                        mse_grain_size[grain_size] = mse_result
+
+                    mse_train[train] = mse_grain_size
+
+                mse_comp[comp] = mse_train
+
+            mse_geol[geol] = mse_comp
+
+        mse_quarry[quarry] = mse_geol
+        
+    return mse_quarry
+
+
+def calculate_mse_classic(CV_results):
+    """Calculate Mean Squared Error based on 
+    cross validation (CV) results"""
+
+    mse_quarry = {}
+
+    for quarry, geol_data in CV_results.items():
+        mse_geol = {}
+
+        for geol, train_data in geol_data.items():
+            mse_train = {}
+
+            for train, grain_size_data in train_data.items():
+                mse_grain_size = {}
+
+                for grain_size, data in grain_size_data.items():
+                    # MSE calculation
+                    mse_result = ((data["Actual"] - data["Grid"]) ** 2).mean(axis=0)
+                    mse_grain_size[grain_size] = mse_result
+
+                mse_train[train] = mse_grain_size
+
+            mse_geol[geol] = mse_train
+
+        mse_quarry[quarry] = mse_geol
+        
+    return mse_quarry
+
+
+def average_mse_results_CVfolds_new(mse_results, quarry, code_geol, n_comp):
+
+    averaged_mse_results = {}
+
+    for train, grain_size_data in mse_results[quarry][code_geol][n_comp].items():
+        values = []
+        for grain_size, data in grain_size_data.items():
+            values.append(data)
+        averaged_mse_results[train] = np.mean(values)
+    return(averaged_mse_results)
+
+
+def average_mse_results_CVfolds_classic(mse_results, quarry, code_geol):
+
+    averaged_mse_results = {}
+
+    for train, grain_size_data in mse_results[quarry][code_geol].items():
+        values = []
+        for grain_size, data in grain_size_data.items():
+            values.append(data)
+        averaged_mse_results[train] = np.mean(values)
+    return(averaged_mse_results)
+
+
+def average_mse_results_n_comp(averaged_mse_results):
+    
+    values = []
+
+    for key, value in averaged_mse_results.items():
+        values.append(value)
+        
+    return(np.mean(values))
