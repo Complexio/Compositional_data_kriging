@@ -73,7 +73,8 @@ def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
     if x2 > grid_info_dict["ncols"] - 1:
         x2 -= 1
     
-    # Calculate closest distance from actual coordinates to grid point coordiantes
+    # Calculate closest distance from actual coordinates to grid point 
+    # coordinates
     # Choose minimal or maximal coordinates if on edge of grid
     
     y1_distance = np.abs(y1 - y_actual) 
@@ -116,8 +117,110 @@ def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
         # Take the mean of the found values
         mean_val = np.mean(lookup_values_val)
     else:
+        print(y_grid, x_grid)
         mean_val = data_array[int(grid_info_dict["nrows"]) - y_grid, x_grid]
     
     f.close()
     
     return(mean_val, grain_size)
+
+
+def cross_validation(rootDir):
+
+    #quarry = "Berg"
+    #code_geol = "GZ"
+    #n_test = "1"
+
+    results_test = {}
+
+    n_files = 0
+    
+
+    for dirName, subdirList, fileList in os.walk(rootDir):
+
+        if "Berg" in dirName:
+            #print(dirName)
+            quarry = "Berg"
+        elif "MHZ" in dirName:
+            #print(dirName)
+            quarry = "MHZ"
+            #results_geol = {}
+        else:
+            pass
+
+        if "TZ" in dirName:
+            code_geol = "TZ"
+            print(code_geol)
+        elif "IZ" in dirName:
+            code_geol = "IZ"
+            print(code_geol)
+        elif "GZ" in dirName:
+            code_geol="GZ"
+            print(code_geol)
+        else:
+            pass
+        
+        #print(f"{quarry} {code_geol}")
+        
+        results_grain_size = {}
+
+        for file in fileList:
+
+            # New approach file syestem
+            #if int(file[-5]) in [1, 2, 3, 4, 5]:
+            #    n_test = file[-5]
+
+            # Classic approach file system
+            if int(dirName[-1]) in [1, 2, 3, 4, 5]:
+                n_test = dirName[-1]
+                #n_test_old = n_test
+                
+                inputfile = f"../_CROSS_VALIDATION/{quarry}/{code_geol}/{quarry}_{code_geol}_{n_test}_test.csv"
+                boreholes = list(pd.read_csv(inputfile, 
+                                             sep=";", 
+                                             index_col="hole_id").index)
+                #if n_test_old != n_test:
+                #    results_test = {}
+                
+            if file.endswith(".asc"):
+                gridfile = file
+                n_files +=1
+                
+                print(gridfile, inputfile)
+
+                # Get grain size label
+                regex = "z_\d+"
+                grain_size = re.search(regex, file).group()
+
+                # Get PC component label
+                #regex1 = "\dcomp"
+                #comp = re.search(regex1, file).group()
+
+                # Get train label
+                n_train = dirName[-1]
+
+                results_borehole = {}
+
+                # Loop through all test boreholes
+                for borehole in boreholes:
+                    results_borehole[borehole] = lookup_value(f"{dirName}/{gridfile}", 
+                                                                 inputfile, 
+                                                                 borehole, 
+                                                                 average=False)
+                    
+                lookup_df = pd.DataFrame.from_dict(results_borehole, 
+                                                   orient='index')
+                lookup_df.columns = ["Grid", "Actual"]
+                lookup_df["Diff"] = lookup_df["Grid"] - lookup_df["Actual"]
+                
+                
+                results_grain_size[grain_size] = lookup_df
+        try:
+            results_test[n_train] = results_grain_size
+        except:
+            pass
+
+
+    print("Number of files processed:", n_files)
+    
+    return(results_test)
