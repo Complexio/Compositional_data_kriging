@@ -190,9 +190,9 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     code_geol = code_geol[1:-1]
 
     try:
-        regex2 = re.compile("_\d")
+        regex2 = re.compile("_\d/")
         n_train = regex2.search(directory).group()
-        n_train = n_train[1:]
+        n_train = n_train[1:-1]
     except Exception as e:
         raise e
     
@@ -305,7 +305,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     if save_data == True:
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
-            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED/" + quarry_code + "/" + code_geol \
+            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_80-20/" + quarry_code + "/" + code_geol \
                 + "/" + str(n_comp) + "comp/" + n_train + "/" + quarry_code + "_" + code_geol \
                 + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_spherical_" + n_train +".asc"
 
