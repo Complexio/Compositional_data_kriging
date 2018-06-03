@@ -129,8 +129,7 @@ def pre_processing(file, save_data=False, save_name=None,
     #print(df_dict)
 
     for key, value in df_dict_pca.items():
-        # TO DO: Check this line 'df_dict["GZ/Sheet1"]'
-        # Does matter from which file the coordiantes are taken since 
+        # Does matter from which file the coordinates are taken since 
         # this differs from layer to layer
         df_dict_pca_merge[key] = pd.merge(df_dict[key][["lat", "lon"]], 
                                           value, 
@@ -138,7 +137,8 @@ def pre_processing(file, save_data=False, save_name=None,
                                           right_index=True)
     
     df_variance = pd.DataFrame.from_dict(df_dict_variance).T
-    df_variance.columns = ["PC" + "{:02}".format(i) for i in range(1, df_variance.shape[1] + 1)]
+    df_variance.columns = ["PC" + "{:02}".format(i) \
+                          for i in range(1, df_variance.shape[1] + 1)]
     
     
     # ---------
@@ -545,7 +545,8 @@ def pre_processing_debug(file, save_data=False, save_name=None):
                                           right_index=True)
     
     df_variance = pd.DataFrame.from_dict(df_dict_variance).T
-    df_variance.columns = ["PC" + "{:02}".format(i) for i in range(1, df_variance.shape[1] + 1)]
+    df_variance.columns = ["PC" + "{:02}".format(i) \
+                          for i in range(1, df_variance.shape[1] + 1)]
     
     
     # ---------
