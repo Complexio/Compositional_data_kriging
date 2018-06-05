@@ -151,7 +151,7 @@ def pre_processing(file, save_data=False, save_name=None,
             # TO DO: Change default directory to change with input
             writer = pd.ExcelWriter(save_name + ".xlsx")
         else:
-            writer = pd.ExcelWriter("../_RESULTS/PCA/Berg_pca.xlsx")
+            writer = pd.ExcelWriter("../_RESULTS/PREPROCESSED/pca.xlsx")
 
         for key, value in df_dict_pca_merge.items():
             value.to_excel(writer, key)
@@ -418,19 +418,10 @@ def intr_dim(df, n_comp=None, bar=True, cumul=True):
     return
 
 
-
-#TEST CASE FUNCTIONS
-
-def pre_processing_debug(file, save_data=False, save_name=None):
-    """Pre-processing module of new approach for interpolation 
-    of compositional data by ordinary kriging
-
-    Parameters:
-
-    Returns:
-
-    """
-    
+def pre_pre_processing(file, column_range=["z_1000", "z_710", "z_500", "z_355", 
+                                           "z_250", "z_180", "z_125", "z_90", 
+                                           "z_63", "z_0"]):  
+    """Perform clr-transformation before actual pre-processing"""
     # -------------------------
     # DATA LOADING AND CLEANING
     # -------------------------
@@ -446,8 +437,8 @@ def pre_processing_debug(file, save_data=False, save_name=None):
         
     
     # Drop rows with no or incomplete GSD's
-    # for key, value in df_dict.items():
-    #     df_dict[key] = value.dropna(subset=["z_90"])
+    for key, value in df_dict.items():
+        df_dict[key] = value.dropna(subset=["z_90"])
 
     # Set hole_id as index
     for key, value in df_dict.items():
@@ -457,8 +448,9 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     df_dict_GSD = {}
 
     for key, value in df_dict.items():
-        # TO DO: Change column range
-        df_dict_GSD[key] = value.loc[:, df_dict[key].columns[2:]]
+        df_dict_GSD[key] = value.loc[:, column_range]
+        # Check that column order in df matches order of input column_range
+        assert (column_range == df_dict_GSD[key].columns).all
     
     # Replace zero by very small value
     for key, value in df_dict_GSD.items():
@@ -467,6 +459,7 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     # Correct percentages so they sum up to exactly 100
     for key, value in df_dict_GSD.items():
         df_dict_GSD[key] = value.divide(value.sum(axis=1), axis=0) * 100
+        print(value.shape)
     
     
     # ------------------
@@ -482,7 +475,43 @@ def pre_processing_debug(file, save_data=False, save_name=None):
 
     for key, value in df_dict_GSD_ln.items():
         df_dict_GSD_clr[key] = value.subtract(value.mean(axis=1), axis=0)
+        
     
+    df_dict_clr_merge = {}
+
+    #print(df_dict)
+
+    for key, value in df_dict_GSD_clr.items():
+        # Does matter from which file the coordinates are taken since 
+        # this differs from layer to layer
+        df_dict_clr_merge[key] = pd.merge(df_dict[key][["lat", "lon"]], 
+                                          value, 
+                                          left_index=True, 
+                                          right_index=True)
+    
+    return df_dict_clr_merge
+
+
+def pca_pre_processing(file, save_data=False, save_name=None,
+                       column_range=["z_1000", "z_710", "z_500", "z_355", 
+                                     "z_250", "z_180", "z_125", "z_90", "z_63", 
+                                     "z_0"]): 
+    """Perform PCA on already clr-transformed data"""
+    
+    xlsx_file = pd.ExcelFile(file)
+    print(xlsx_file.sheet_names)
+    
+    # Create dictionary of geological layer dataframes 
+    df_dict = {}
+
+    for sheet_name in xlsx_file.sheet_names:
+        df_dict[sheet_name] = xlsx_file.parse(sheet_name, index_col='hole_id')
+    
+    # Drop unnecessary columns
+    df_dict_GSD_clr = {}
+
+    for key, value in df_dict.items():
+        df_dict_GSD_clr[key] = value.loc[:, column_range]
     
     # -----------------------------------
     # PRINCINPAL COMPONENT ANALYSIS (PCA)
@@ -500,19 +529,19 @@ def pre_processing_debug(file, save_data=False, save_name=None):
         n_comp = min(data.shape)
         pca = PCA(n_components = n_comp)
         pca.fit(data)
-        print(pca.fit(data))
+        #print(pca.fit(data))
 
         # Determine PCA expleined variance ratio
         dict_pca[key] = pca
         df_dict_variance[key] = pca.explained_variance_ratio_
 
-        print(pca.explained_variance_ratio_)
+        #print(pca.explained_variance_ratio_)
 
         variance_sum = 0
         variance_n_comp = 0
-        print(data.shape[1])
+        #print(data.shape[1])
         for v in range(n_comp):
-            print(pca.explained_variance_ratio_[v])
+            #print(pca.explained_variance_ratio_[v])
             if variance_sum < 0.95:
                 variance_sum += pca.explained_variance_ratio_[v]
                 variance_n_comp += 1
@@ -523,10 +552,10 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     df_dict_pca = {}
 
     for key, value in dict_pca.items():
-        print(key)
-        print(value)
-        print(df_dict_GSD_clr[key])
-        print(value.transform(df_dict_GSD_clr[key]))
+        #print(key)
+        #print(value)
+        #print(df_dict_GSD_clr[key])
+        #print(value.transform(df_dict_GSD_clr[key]))
         df_dict_pca[key] = pd.DataFrame(value.transform(df_dict_GSD_clr[key]), 
                                         # Change range to (1, max # params + 1)
                                         columns=["PC" + "{:02}".format(i)
@@ -535,14 +564,17 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     
     df_dict_pca_merge = {}
 
-    print(df_dict)
+    #print(df_dict)
 
     for key, value in df_dict_pca.items():
         # TO DO: Check this line 'df_dict["GZ/Sheet1"]'
-        df_dict_pca_merge[key] = pd.merge(df_dict["Sheet2"][["lat", "lon"]], 
+        # Does matter from which file the coordiantes are taken since 
+        # this differs from layer to layer
+        df_dict_pca_merge[key] = pd.merge(df_dict[key][["lat", "lon"]], 
                                           value, 
                                           left_index=True, 
                                           right_index=True)
+        print(df_dict[key].index)
     
     df_variance = pd.DataFrame.from_dict(df_dict_variance).T
     df_variance.columns = ["PC" + "{:02}".format(i) \
@@ -552,16 +584,18 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     # ---------
     # SAVE DATA
     # ---------
-    print(df_dict_pca_merge)
+    #print(df_dict_pca_merge)
     
     if save_data == True:
         if save_name != None:
-            writer = pd.ExcelWriter("../_RESULTS/" + save_name + ".xlsx")
+            # TO DO: Change default directory to change with input
+            writer = pd.ExcelWriter(save_name + ".xlsx")
         else:
-            writer = pd.ExcelWriter("../_RESULTS/Berg_pca.xlsx")
+            writer = pd.ExcelWriter("../_RESULTS/PCA/Berg_pca.xlsx")
 
         for key, value in df_dict_pca_merge.items():
             value.to_excel(writer, key)
+            print(value.shape)
 
         df_variance.to_excel(writer, "pca_variance")
         writer.close()
@@ -569,8 +603,8 @@ def pre_processing_debug(file, save_data=False, save_name=None):
     return [df_dict_GSD_clr, dict_pca, df_dict_pca_merge, df_variance]
 
 
-def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data, 
-                          n_components=5, save_data=False):
+def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data, 
+                        n_components=5, save_data=False):
     """Post-processing module of new approach for interpolation 
     of compositional data by ordinary kriging
 
@@ -594,6 +628,13 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     regex1 = re.compile("(/[A-Z][A-Z]/)")
     code_geol = regex1.search(directory).group()
     code_geol = code_geol[1:-1]
+
+    try:
+        regex2 = re.compile("_\d/")
+        n_train = regex2.search(directory).group()
+        n_train = n_train[1:-1]
+    except Exception as e:
+        raise e
     
     print(quarry_code, code_geol)
     
@@ -630,8 +671,6 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     # Create list of PC scores per kriged gridpoint
     points = []
     
-    print(panel.shape)
-
     for i in range(panel.shape[1]):
         for j in range(panel.shape[2]):
             total = []
@@ -640,7 +679,6 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
             points.append(total)
             
     print("gridpoints:", len(points))
-    print("points", points[0])
     
     # -----------
     # REVERSE PCA
@@ -649,12 +687,10 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     X = []
     n_comp=n_components
     # Set PCA model properties to use
-    model = dict_pca["Sheet2"] # TO DO: revert to code_geol
+    # TO DO: Revert to "code_geol"
+    model = dict_pca["train"]
 
     for total in points:
-        # Dot product of PC scores and transposed Eigenvectors
-        # Number of score and Eigenvectors that is used is determined
-        # by the number of components to use for the reconstruction.
         x = np.dot(total[:n_comp], model.components_[:n_comp, :])
         X.append(x)
     
@@ -665,26 +701,27 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
 
     # Reverse clr - step 1
 
-    clr = df_dict_GSD_clr["Sheet2"] # TO DO: revert to code_geol
+     # TO DO: Revert to "code_geol"
+    clr = df_dict_GSD_clr["train"]
     X_clr = []
 
     for x in X:
         x += clr.mean(axis=0).values
         X_clr.append(x)
-
-
+        
+    X_ratio = X_clr
     
     # Reverse clr - step 2
     # Calculate GSD percentages 
 
-    X_ratio = []
-    for x_clr in X_clr:
-        x_ratio = np.exp(x_clr) / np.sum(np.exp(x_clr)) * 100
-        X_ratio.append(x_ratio)
+#     X_ratio = []
+#     for x_clr in X_clr:
+#         x_ratio = np.exp(x_clr) / np.sum(np.exp(x_clr)) * 100
+#         X_ratio.append(x_ratio)
     
-    # Check that for every grid point the sum of the percentages equals 100
-    for i in range(len(X_ratio)):
-        assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
+#     # Check that for every grid point the sum of the percentages equals 100
+#     for i in range(len(X_ratio)):
+#         assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
     
     # ---------
     # SAVE DATA
@@ -694,7 +731,7 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
 
     results = {}
     # TO DO: Check why size of range == 10 (10 grain size classes)
-    for i in range(10): # TO DO: revert to 10
+    for i in range(10):
         result = np.empty(df_dict_pca_kriged[component].shape)
         X_index = 0
         #print(X_ratio[0][i])
@@ -710,9 +747,9 @@ def post_processing_debug(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     if save_data == True:
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
-            f = "../_RESULTS/REVERSE_NEW/" + quarry_code + "/" + code_geol \
-                + "/" + str(n_comp) + "comp/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp.asc"
+            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_clr/" + quarry_code + "/" + code_geol \
+                + "/" + str(n_comp) + "comp/" + n_train + "/" + quarry_code + "_" + code_geol \
+                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_spherical_" + n_train +".asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
