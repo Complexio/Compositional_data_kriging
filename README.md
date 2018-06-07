@@ -1,4 +1,4 @@
-# Compositional_data_kriging
+# Compositional data kriging
 **M.Sc. thesis topic of Matthias Van Delsen (KU Leuven)**  
 "Optimal geostatistical interpolation of complete grain-size distributions for estimation of sand resources"
 
@@ -7,14 +7,15 @@ Finding a more robust way to interpolate compositional data (here in the form of
 
 ## Contents
 1) Analysis: contains Jupyter notebooks with 
--	A) Berg data cleaning and EDA, 
--	B) MHZ data cleaning and EDA, 
--	C)  Pre- and Postprocessing (PPP) module,
--	D) Cross validation with MSE calculation.
+	-	A) Berg data cleaning and EDA, 
+	-	B) MHZ data cleaning and EDA, 
+	-	C)  Pre- and Postprocessing (PPP) module,
+	-	D) Cross validation with MSE calculation.
 
 Also contains local Python packages containing:
--	Data cleaning and visualisation package
--	
+	-	Data cleaning and visualisation package
+	-	Pre- and Postprocessing module package
+	-	Cross valdiation and MSE calculation package
 
 2) Contour maps: all interpolated grain size distributions via both methods as contour maps
 
@@ -31,4 +32,4 @@ Also contains local Python packages containing:
 8) Scripts: Python and BASIC (Script Surfer) scripts
 
 ## Thesis
-If you would like to request a digital copy of the final thesis, you can contact Matthias Van Delsen at matthias_vandelsen@hotmail.com .
+If you would like to request a digital copy of the final thesis, you can contact Matthias Van Delsen at matthias_vandelsen@hotmail.com
