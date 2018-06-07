@@ -42,7 +42,10 @@ def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
     grain_size_class = regex.search(grid_file).group()
     
     # TO DO: select sheet_name based on grid_file's name string
-    lookup_values = pd.read_csv(input_file, sep=";", index_col="hole_id")
+    if input_file.endswith(".csv"):
+        lookup_values = pd.read_csv(input_file, sep=";", index_col="hole_id")
+    else:
+        lookup_values = pd.read_excel(input_file, index_col="hole_id")
     
     lon, lat = list(lookup_values.loc[sample, ["lat", "lon"]])
     grain_size = lookup_values.loc[sample, grain_size_class]
@@ -176,9 +179,13 @@ def cross_validation(rootDir):
                 #n_test_old = n_test
                 
                 inputfile = f"../_CROSS_VALIDATION_clr/{quarry}/{code_geol}/{quarry}_{code_geol}_{n_test}_test.csv"
-                boreholes = list(pd.read_csv(inputfile, 
-                                             sep=";", 
-                                             index_col="hole_id").index)
+                if inputfile.endswith(".csv"):
+                    boreholes = list(pd.read_csv(inputfile, 
+                                                 sep=";", 
+                                                 index_col="hole_id").index)
+                else:
+                    boreholes = list(pd.read_excel(inputfile,  
+                                                   index_col="hole_id").index)
                 #if n_test_old != n_test:
                 #    results_test = {}
                 
