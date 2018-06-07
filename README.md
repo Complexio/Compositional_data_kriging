@@ -6,16 +6,14 @@
 Finding a more robust way to interpolate compositional data (here in the form of grain size data) by using centred log ratio (clr) transformation and principal component analysis (PCA) on the data, using ordinary kriging to interpolate them and finally reversing the PCA and clr transformation to obtain compositional data once again.
 
 ## Contents
-1) Analysis: contains Jupyter notebooks with 
+1) Analysis: contains Jupyter notebooks and local Python packages:
 	-	A) Berg data cleaning and EDA, 
 	-	B) MHZ data cleaning and EDA, 
 	-	C)  Pre- and Postprocessing (PPP) module,
 	-	D) Cross validation with MSE calculation.
-
-Also contains local Python packages containing:
-	-	Data cleaning and visualisation package
-	-	Pre- and Postprocessing module package
-	-	Cross valdiation and MSE calculation package
+   	- 	Data cleaning and visualisation package
+   	- 	Pre- and Postprocessing module package
+   	- 	Cross valdiation and MSE calculation package
 
 2) Contour maps: all interpolated grain size distributions via both methods as contour maps
 

@@ -9,15 +9,15 @@ def subset_df_based_on_categories(df, category_column):
     
     Parameters:
     -----------
-    df (pd.DataFrame)
+    df : pd.DataFrame
         Dataframe to be subsetted
-    category_column (str)
+    category_column : str
         Column name which contains the categories 
         to be used for subsetting the dataframe
         
     Returns:
     --------
-    subsets (dict)
+    subsets : dict
         Dictionary of categories : subset dataframes
     """
     
@@ -38,13 +38,13 @@ def combine_id_rows_simple(df, category, id_column, from_column, to_column):
     
     Parameters:
     -----------
-    subset (pd.DataFrame)
+    subset : pd.DataFrame
         Dataframe to combine rows of
-    id_column (str)
+    id_column : str
         Name of the id column to use for combining rows
-    from_column (str)
+    from_column : str
         Name of the column to use for minimum value
-    to_column (str)
+    to_column : str
         Name of the column to use for maximum value
         
     Returns:
@@ -80,18 +80,18 @@ def combine_id_rows_complex(df, category, id_column, from_column, to_column):
     
     Parameters:
     -----------
-    subset (pd.DataFrame)
+    subset : pd.DataFrame
         Dataframe to combine rows of
-    id_column (str)
+    id_column : str
         Name of the id column to use for combining rows
-    from_column (str)
+    from_column : str
         Name of the column to use for minimum value
-    to_column (str)
+    to_column : str
         Name of the column to use for maximum value
         
     Returns:
     --------
-    df_unique (pd.DataFrame)
+    df_unique : pd.DataFrame
         Dataframe with unique rows and new ranges
     """
     

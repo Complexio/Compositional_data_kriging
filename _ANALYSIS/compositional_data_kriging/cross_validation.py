@@ -13,7 +13,32 @@ import xarray # will be needed when panels in pandas gets deprecated
 
 def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
     """Lookup value of borehole value in grid file based 
-    on coordinates of requested borehole sample in input file"""
+    on coordinates of requested borehole sample in input file
+
+    Parameters:
+    -----------
+    grid_file : str
+        File with interpolated GSD used for looking up values
+    input_file : str
+        File with coordinates to lookup value in gridfile
+    sample : str
+        Borehole sample ID
+    code_geol : str (optional)
+        Geological layer label (defaults to None)
+    average : Bool (optional)
+        Whether to take the average of four closest looked up values in grid 
+        file based on coordinates in input file
+
+    Returns:
+    --------
+    Tuple of
+        mean_val : float
+            Looked up value in grid file
+        grain_size : float
+            Input file value
+
+    """
+
     # Open file
     f = open(grid_file)
     grid = f.readlines()
@@ -129,6 +154,20 @@ def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
 
 
 def cross_validation(rootDir):
+    """Cross validation
+
+    Parameters:
+    -----------
+    rootDir : str
+        Root directory which contains subfolders which will 
+        be checked for files to operate on
+
+    Returns:
+    --------
+    results_test : dict
+        Dictionary containing results of cross validation
+
+    """
 
     #quarry = "Berg"
     #code_geol = "GZ"
@@ -235,7 +274,19 @@ def cross_validation(rootDir):
 
 def calculate_mse_new(CV_results):
     """Calculate Mean Squared Error based on 
-    cross validation (CV) results"""
+    cross validation (CV) results
+
+    Parameters:
+    -----------
+    CV_results : dict
+        Dictionary of cross validation results
+
+    Returns:
+    --------
+    mse_qaurry : dict
+        Dictionary of MSE calculations
+
+    """
 
     mse_quarry = {}
 
@@ -269,7 +320,19 @@ def calculate_mse_new(CV_results):
 
 def calculate_mse_classic(CV_results):
     """Calculate Mean Squared Error based on 
-    cross validation (CV) results"""
+    cross validation (CV) results
+
+    Parameters:
+    -----------
+    CV_results : dict
+        Dictionary of cross validation results
+
+    Returns:
+    --------
+    mse_qaurry : dict
+        Dictionary of MSE calculations
+
+    """
 
     mse_quarry = {}
 
@@ -297,6 +360,24 @@ def calculate_mse_classic(CV_results):
 
 
 def average_mse_results_CVfolds_new(mse_results, quarry, code_geol, n_comp):
+    """Average the MSE results over the cross validation folds
+
+    Parameters:
+    -----------
+    mse_results : dict
+    quarry : str
+        Quarry label
+    code_geol : str
+        Geological layer label
+    n_comp : str
+        Principal component number label
+
+    Returns:
+    --------
+    averaged_mse_results : dict
+        Averaged MSE results over cross validation folds
+
+    """
 
     averaged_mse_results = {}
 
@@ -309,6 +390,22 @@ def average_mse_results_CVfolds_new(mse_results, quarry, code_geol, n_comp):
 
 
 def average_mse_results_CVfolds_classic(mse_results, quarry, code_geol):
+    """Average the MSE results over the cross validation folds
+
+    Parameters:
+    -----------
+    mse_results : dict
+    quarry : str
+        Quarry label
+    code_geol : str
+        Geological layer label
+
+    Returns:
+    --------
+    averaged_mse_results : dict
+        Averaged MSE results over cross validation folds
+
+    """
 
     averaged_mse_results = {}
 
@@ -321,6 +418,10 @@ def average_mse_results_CVfolds_classic(mse_results, quarry, code_geol):
 
 
 def average_mse_results_n_comp(averaged_mse_results):
+    """ Average the MSE results over the principal components of 
+    the already averaged MSE results over the cross validation folds
+
+    """
     
     values = []
 

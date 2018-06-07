@@ -6,6 +6,7 @@ import seaborn as sns
 import os
 import re
 import xarray # will be needed when panels in pandas gets deprecated
+import numba as nb
 
 
 def pre_processing(file, save_data=False, save_name=None, 
@@ -15,8 +16,31 @@ def pre_processing(file, save_data=False, save_name=None,
     of compositional data by ordinary kriging
 
     Parameters:
+    -----------
+    file : str
+        Path to file to be pre-processed
+    save_data : Bool (optional)
+        Whether to save pre-processed data or not (defaults to False)
+    save_name : str (optional)
+        If save_data==True, path to save pre-processed files to 
+        (defaults to None)
+    column_range : list (optional)
+        List of column headers to use as lookup columns for 
+        compositional data in input file 
+        (defaults to topic-related grain size class names)
 
     Returns:
+    --------
+    List of
+        df_dict_GSD_clr :  dict
+            Dictionary of dataframes with centred log ratio (clr) 
+            transformd grain size data
+        dict_pca : dict
+            Dictionary of PCA model parameters
+        df_dict_pca_merge : dict
+            Dictionary of dataframes with principal component scores
+        df_variance
+            Dataframe with PCA explained variance
 
     """
     
@@ -164,13 +188,40 @@ def pre_processing(file, save_data=False, save_name=None,
 
 
 def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data, 
-                    n_components=5, save_data=False):
+                    n_components=5, save_data=False, input_format="xlsx",
+                    verify=True):
     """Post-processing module of new approach for interpolation 
     of compositional data by ordinary kriging
 
     Parameters:
+    -----------
+    directory : str
+        Path of directory
+    df_dict_GSD_clr : dict
+        Dictionary of dataframes with centred log ratio (clr) 
+        transformd grain size data (resulting from preprocessing)
+    dict_pca : dict
+        Dictionary of PCA model parameters 
+        (resulting from pre-processing)
+    grid_data : str
+        Grid file parameters
+    n_components : int (optional)
+        Number of principal components to use during reverse PCA
+        (defaults to 5)
+    save_data : Bool (optional)
+        Whether to save the data or not (defaults to False)
+    input_format : str (optional)
+        Data format to look for in directories to use as input files
+        defaults to .xlsx
+    verify : Bool (optional)
+        Whether to verify the unit-sum constraint on the resulting 
+        grain size data as percentages (defaults to True)
+
 
     Returns:
+    --------
+    points : list
+        List of individual grid file points
 
     """
     
@@ -194,7 +245,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
         n_train = regex2.search(directory).group()
         n_train = n_train[1:-1]
     except Exception as e:
-        raise e
+        pass
     
     print(quarry_code, code_geol)
     
@@ -207,13 +258,25 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     # Loop through files
     for file in os.listdir(directory):
-        if file.endswith(".xlsx"):
-            m = regex2.search(file)
-            component = m.group()
-            df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
-                                                          + file, header=None)
-            print(file, df_dict_pca_kriged[component].shape)
-            n_files += 1
+        if input_format == "xlsx":
+            if file.endswith(".xlsx"):
+                m = regex2.search(file)
+                component = m.group()
+                df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
+                                                              + file, header=None)
+                print(file, df_dict_pca_kriged[component].shape)
+                n_files += 1
+        elif input_format == "csv":
+            if file.endswith(".csv"):
+                m = regex2.search(file)
+                component = m.group()
+                df_dict_pca_kriged[component] = pd.read_csv(directory + "/" 
+                                                              + file, sep=";",
+                                                            header=None)
+                print(file, df_dict_pca_kriged[component].shape)
+                n_files += 1
+        else:
+            "Error"
     
     panel = pd.Panel(df_dict_pca_kriged)
     
@@ -230,6 +293,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     # Create list of PC scores per kriged gridpoint
     points = []
+    print(panel.shape)
     
     for i in range(panel.shape[1]):
         for j in range(panel.shape[2]):
@@ -247,8 +311,10 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     X = []
     n_comp=n_components
     # Set PCA model properties to use
-    # TO DO: Revert to "code_geol"
-    model = dict_pca["train"]
+    try:
+        model = dict_pca[code_geol]
+    except:
+        model = dict_pca["train"]
 
     for total in points:
         x = np.dot(total[:n_comp], model.components_[:n_comp, :])
@@ -261,13 +327,18 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
 
     # Reverse clr - step 1
 
-     # TO DO: Revert to "code_geol"
-    clr = df_dict_GSD_clr["train"]
+    try:
+        clr = df_dict_GSD_clr[code_geol]
+    except:
+        clr = df_dict_GSD_clr["train"]
+
     X_clr = []
 
     for x in X:
         x += clr.mean(axis=0).values
         X_clr.append(x)
+    # Not faster
+    #X_clr = map(lambda x: x + clr.mean(axis=0).values, X)
     
     # Reverse clr - step 2
     # Calculate GSD percentages 
@@ -278,8 +349,9 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
         X_ratio.append(x_ratio)
     
     # Check that for every grid point the sum of the percentages equals 100
-    for i in range(len(X_ratio)):
-        assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
+    if verify == True:
+        for i in range(len(X_ratio)):
+            assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
     
     # ---------
     # SAVE DATA
@@ -421,7 +493,25 @@ def intr_dim(df, n_comp=None, bar=True, cumul=True):
 def pre_pre_processing(file, column_range=["z_1000", "z_710", "z_500", "z_355", 
                                            "z_250", "z_180", "z_125", "z_90", 
                                            "z_63", "z_0"]):  
-    """Perform clr-transformation before actual pre-processing"""
+    """Perform clr-transformation before actual pre-processing
+    
+    Parameters:
+    -----------
+    file : str
+        Path to file to be pre-processed
+    column_range : list (optional)
+        List of column headers to use as lookup columns for 
+        compositional data in input file 
+        (defaults to topic-related grain size class names)
+
+    Returns:
+    --------
+    df_dict_clr_merge : dict
+        Dictionary of dataframes with clr transformed data 
+        merged with coordinates
+
+    """
+
     # -------------------------
     # DATA LOADING AND CLEANING
     # -------------------------
@@ -609,8 +699,33 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     of compositional data by ordinary kriging
 
     Parameters:
+    -----------
+    directory : str
+        Path of directory
+    df_dict_GSD_clr : dict
+        Dictionary of dataframes with centred log ratio (clr) 
+        transformd grain size data (resulting from preprocessing)
+    dict_pca : dict
+        Dictionary of PCA model parameters 
+        (resulting from pre-processing)
+    grid_data : str
+        Grid file parameters
+    n_components : int (optional)
+        Number of principal components to use during reverse PCA
+        (defaults to 5)
+    save_data : Bool (optional)
+        Whether to save the data or not (defaults to False)
+    input_format : str (optional)
+        Data format to look for in directories to use as input files
+        defaults to .xlsx
+    verify : Bool (optional)
+        Whether to verify the unit-sum constraint on the resulting 
+        grain size data as percentages (defaults to True)
 
     Returns:
+    --------
+    points : list
+        List of individual grid file points
 
     """
     
@@ -647,13 +762,25 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     # Loop through files
     for file in os.listdir(directory):
-        if file.endswith(".xlsx"):
-            m = regex2.search(file)
-            component = m.group()
-            df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
-                                                          + file, header=None)
-            print(file, df_dict_pca_kriged[component].shape)
-            n_files += 1
+        if input_format == "xlsx":
+            if file.endswith(".xlsx"):
+                m = regex2.search(file)
+                component = m.group()
+                df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
+                                                              + file, header=None)
+                print(file, df_dict_pca_kriged[component].shape)
+                n_files += 1
+        elif input_format == "csv":
+            if file.endswith(".csv"):
+                m = regex2.search(file)
+                component = m.group()
+                df_dict_pca_kriged[component] = pd.read_csv(directory + "/" 
+                                                              + file, sep=";",
+                                                            header=None)
+                print(file, df_dict_pca_kriged[component].shape)
+                n_files += 1
+        else:
+            "Error"
     
     panel = pd.Panel(df_dict_pca_kriged)
     
@@ -719,9 +846,11 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
 #         x_ratio = np.exp(x_clr) / np.sum(np.exp(x_clr)) * 100
 #         X_ratio.append(x_ratio)
     
-#     # Check that for every grid point the sum of the percentages equals 100
-#     for i in range(len(X_ratio)):
-#         assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
+
+    # Check that for every grid point the sum of the percentages equals 100
+    if verify == True:
+        for i in range(len(X_ratio)):
+            assert np.isclose(pd.DataFrame(X_ratio[i]).sum(), 100.0)
     
     # ---------
     # SAVE DATA
