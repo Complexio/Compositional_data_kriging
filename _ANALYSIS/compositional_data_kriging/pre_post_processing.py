@@ -8,6 +8,11 @@ import re
 import xarray # will be needed when panels in pandas gets deprecated
 import numba as nb
 
+# ===================================================================
+# TO DO:
+#  - Replace soon to be deprecated panels of pandas by xarray package
+# ===================================================================
+
 
 def pre_processing(file, save_data=False, save_name=None, 
                    column_range=["z_1000", "z_710", "z_500", "z_355", "z_250", 
@@ -187,7 +192,7 @@ def pre_processing(file, save_data=False, save_name=None,
     return [df_dict_GSD_clr, dict_pca, df_dict_pca_merge, df_variance]
 
 
-def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data, 
+def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_info, 
                     n_components=5, save_data=False, input_format="xlsx",
                     verify=True):
     """Post-processing module of new approach for interpolation 
@@ -203,7 +208,7 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     dict_pca : dict
         Dictionary of PCA model parameters 
         (resulting from pre-processing)
-    grid_data : str
+    grid_info : str
         Grid file parameters
     n_components : int (optional)
         Number of principal components to use during reverse PCA
@@ -263,7 +268,8 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
                 m = regex2.search(file)
                 component = m.group()
                 df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
-                                                              + file, header=None)
+                                                              + file, 
+                                                              header=None)
                 print(file, df_dict_pca_kriged[component].shape)
                 n_files += 1
         elif input_format == "csv":
@@ -377,16 +383,17 @@ def post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     if save_data == True:
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
-            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_80-20/" + quarry_code + "/" + code_geol \
-                + "/" + str(n_comp) + "comp/" + n_train + "/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_spherical_" + n_train +".asc"
+            f = f"../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_80-20/\
+                 {quarry_code}/{code_geol}/{str(n_comp)}comp/{n_train}/\
+                 {quarry_code}_{code_geol}_{gsd_class}_kriged_reverse_\
+                 {str(n_comp)}comp_spherical_{n_train}.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
             #f = open("../_RESULTS/REVERSE_NEW/" + code_geol + "/" + code_geol 
             #         + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) 
             #         + "comp.asc", 'w+')
-                f.write(grid_data)
+                f.write(grid_info)
                 pd.DataFrame(value).to_csv(f, sep=" ", header=False, 
                                            index=False, mode='a')
     
@@ -693,8 +700,9 @@ def pca_pre_processing(file, save_data=False, save_name=None,
     return [df_dict_GSD_clr, dict_pca, df_dict_pca_merge, df_variance]
 
 
-def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data, 
-                        n_components=5, save_data=False):
+def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_info, 
+                        n_components=5, save_data=False, input_format="xlsx",
+                        verify=True):
     """Post-processing module of new approach for interpolation 
     of compositional data by ordinary kriging
 
@@ -708,7 +716,7 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     dict_pca : dict
         Dictionary of PCA model parameters 
         (resulting from pre-processing)
-    grid_data : str
+    grid_info : str
         Grid file parameters
     n_components : int (optional)
         Number of principal components to use during reverse PCA
@@ -767,7 +775,8 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
                 m = regex2.search(file)
                 component = m.group()
                 df_dict_pca_kriged[component] = pd.read_excel(directory + "/" 
-                                                              + file, header=None)
+                                                              + file, 
+                                                              header=None)
                 print(file, df_dict_pca_kriged[component].shape)
                 n_files += 1
         elif input_format == "csv":
@@ -876,16 +885,17 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_data,
     
     if save_data == True:
         for ((key, value), gsd_class) in zip(results.items(), gsd_classes):
-            f = "../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_clr/" + quarry_code + "/" + code_geol \
-                + "/" + str(n_comp) + "comp/" + n_train + "/" + quarry_code + "_" + code_geol \
-                + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) + "comp_spherical_" + n_train +".asc"
+            f = f"../_RESULTS/CROSS_VALIDATION_POSTPROCESSED_80-20/\
+                 {quarry_code}/{code_geol}/{str(n_comp)}comp/{n_train}/\
+                 {quarry_code}_{code_geol}_{gsd_class}_kriged_reverse_\
+                 {str(n_comp)}comp_spherical_{n_train}.asc"
 
             os.makedirs(os.path.dirname(f), exist_ok=True)
             with open(f, 'w+') as f:
             #f = open("../_RESULTS/REVERSE_NEW/" + code_geol + "/" + code_geol 
             #         + "_" + gsd_class +"_kriged_reverse_" + str(n_comp) 
             #         + "comp.asc", 'w+')
-                f.write(grid_data)
+                f.write(grid_info)
                 pd.DataFrame(value).to_csv(f, sep=" ", header=False, 
                                            index=False, mode='a')
     

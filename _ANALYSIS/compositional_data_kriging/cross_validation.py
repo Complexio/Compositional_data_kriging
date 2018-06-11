@@ -217,7 +217,9 @@ def cross_validation(rootDir):
                 n_test = dirName[-1]
                 #n_test_old = n_test
                 
-                inputfile = f"../_CROSS_VALIDATION_clr/{quarry}/{code_geol}/{quarry}_{code_geol}_{n_test}_test.csv"
+                inputfile = f"../_CROSS_VALIDATION_CLR/{quarry}/{code_geol}/"+\
+                            f"{quarry}_{code_geol}_{n_test}_test.csv"
+                
                 if inputfile.endswith(".csv"):
                     boreholes = list(pd.read_csv(inputfile, 
                                                  sep=";", 
@@ -230,7 +232,7 @@ def cross_validation(rootDir):
                 
             if file.endswith(".asc"):
                 gridfile = file
-                n_files +=1
+                n_files += 1
                 
                 print(gridfile, inputfile)
 
@@ -249,10 +251,11 @@ def cross_validation(rootDir):
 
                 # Loop through all test boreholes
                 for borehole in boreholes:
-                    results_borehole[borehole] = lookup_value(f"{dirName}/{gridfile}", 
-                                                                 inputfile, 
-                                                                 borehole, 
-                                                                 average=False)
+                    results_borehole[borehole] = lookup_value(f"{dirName}/"+\
+                                                              f"{gridfile}", 
+                                                             inputfile, 
+                                                             borehole, 
+                                                             average=False)
                     
                 lookup_df = pd.DataFrame.from_dict(results_borehole, 
                                                    orient='index')
@@ -304,7 +307,8 @@ def calculate_mse_new(CV_results):
 
                     for grain_size, data in grain_size_data.items():
                         # MSE calculation
-                        mse_result = ((data["Actual"] - data["Grid"]) ** 2).mean(axis=0)
+                        mse_result = ((data["Actual"] - data["Grid"]) ** 2)\
+                                      .mean(axis=0)
                         mse_grain_size[grain_size] = mse_result
 
                     mse_train[train] = mse_grain_size
@@ -347,7 +351,8 @@ def calculate_mse_classic(CV_results):
 
                 for grain_size, data in grain_size_data.items():
                     # MSE calculation
-                    mse_result = ((data["Actual"] - data["Grid"]) ** 2).mean(axis=0)
+                    mse_result = ((data["Actual"] - data["Grid"]) ** 2).\
+                                 mean(axis=0)
                     mse_grain_size[grain_size] = mse_result
 
                 mse_train[train] = mse_grain_size
@@ -381,7 +386,7 @@ def average_mse_results_CVfolds_new(mse_results, quarry, code_geol, n_comp):
 
     averaged_mse_results = {}
 
-    for train, grain_size_data in mse_results[quarry][code_geol][n_comp].items():
+    for train,grain_size_data in mse_results[quarry][code_geol][n_comp].items():
         values = []
         for grain_size, data in grain_size_data.items():
             values.append(data)
@@ -420,6 +425,15 @@ def average_mse_results_CVfolds_classic(mse_results, quarry, code_geol):
 def average_mse_results_n_comp(averaged_mse_results):
     """ Average the MSE results over the principal components of 
     the already averaged MSE results over the cross validation folds
+
+    Parameters:
+    -----------
+    averaged_mse_results : dict
+
+    Returns:
+    --------
+    np.mean(values) : float
+        Arimethic mean of mse values for all principal components
 
     """
     

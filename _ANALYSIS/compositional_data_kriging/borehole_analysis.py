@@ -63,7 +63,10 @@ def combine_id_rows_simple(df, category, id_column, from_column, to_column):
         # CHANGE "IZ" to variable that chooses name based on category
         unique.append([hole_id, minimum, maximum, category])
         
-    df_unique = pd.DataFrame(unique, columns=[id_column, from_column, to_column, "code_geol"])
+    df_unique = pd.DataFrame(unique, columns=[id_column, 
+                                              from_column, 
+                                              to_column, 
+                                              "code_geol"])
     
     # Check that number of unique values of returned df 
     # equals number of unique values of initial subsetted df
@@ -106,16 +109,21 @@ def combine_id_rows_complex(df, category, id_column, from_column, to_column):
         
         unique.append([hole_id, minimum, maximum, category])
         
-        # Mind the transitions between layers and do not include them in the averageing?
-        df_data_averaged = df_id.groupby("hole_id").mean().reset_index().drop([from_column, to_column], axis=1)
+        # Mind the transitions between layers and do not 
+        # include them in the averageing?
+        df_data_averaged = df_id.groupby("hole_id").mean().reset_index().\
+                                 drop([from_column, to_column], axis=1)
         #print(df_data_averaged)
         df_averages = df_averages.append(df_data_averaged)
         
-    df_unique = pd.DataFrame(unique, columns=[id_column, from_column, to_column, "code_geol"])
+    df_unique = pd.DataFrame(unique, columns=[id_column, from_column, 
+                                              to_column, "code_geol"])
     #print(category, "unique:", df_unique.shape)
     #print(category, "averages:", df_averages.shape)
     try:
-        df_unique_averages = df_unique.merge(df_averages, on=id_column, how='inner')
+        df_unique_averages = df_unique.merge(df_averages, 
+                                             on=id_column, 
+                                             how='inner')
         print(category, "merge:", df_unique_averages.shape)
     except:
         print('error')
@@ -159,11 +167,13 @@ def plot_borehole(df, hole_ids) :
         fig, ax = plt.subplots()
         
         for index, row in hole.iterrows() :
-            interval = hole.loc[index, "depth_from"] - hole.loc[index, "depth_to"]
+            interval = hole.loc[index, "depth_from"] \
+                            - hole.loc[index, "depth_to"]
             bottom = np.negative(hole.loc[index, "depth_from"])
             
             
-            plt.bar(np.arange(1), interval, width=0.1, bottom=bottom, color=hole.loc[index, "color"])
+            plt.bar(np.arange(1), interval, width=0.1, 
+                    bottom=bottom, color=hole.loc[index, "color"])
             # plt.text(0, (bottom + interval/2), hole.loc[index, "code_geol"])
             plt.title("borehole " + hole_id)
             plt.ylabel("depth (m)")
