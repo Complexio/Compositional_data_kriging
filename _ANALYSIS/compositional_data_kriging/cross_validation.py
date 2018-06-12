@@ -7,9 +7,11 @@ import os
 import re
 import xarray # will be needed when panels in pandas gets deprecated
 
-
-# TO DO: (OPTIONAL) Change code so that both .asc as .xlsx files 
-# (+ provided grid info as parameter) can be read into function
+# ==============================================================
+# TO DO: (OPTIONAL) 
+#  - Change code so that both .asc as .xlsx files 
+#    (+ provided grid info as parameter) can be read into function
+# ==============================================================
 
 def lookup_value(grid_file, input_file, sample, code_geol=None, average=True):
     """Lookup value of borehole value in grid file based 
