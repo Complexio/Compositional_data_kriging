@@ -900,3 +900,52 @@ def pca_post_processing(directory, df_dict_GSD_clr, dict_pca, grid_info,
                                            index=False, mode='a')
     
     return points
+
+
+def manipulate_non_negativity(data):
+    """Apply non-negativity constraint by manipulating the data.
+    This is done by putting all negative values to zero
+    
+    Parameters:
+    -----------
+    data : pd.DataFrame
+        Original data
+    
+    Returns:
+    --------
+    data_noneg : pd.DataFrame
+        Manipulated data to which non-negativity 
+        constraint has been applied
+    """
+    
+    # Create copy of data to overcome mirroring issues
+    data_copy = data.copy()
+    # Apply non-negativity filter and change to zero
+    data_copy[data_copy < 0.0] = 0.0
+    data_noneg = data_copy
+    
+    return data_noneg
+
+
+def manipulate_constant_sum(data):
+    """Apply constant sum constraint by manipulating the data.
+    This is done by normalizing the data again
+    
+    Parameters:
+    -----------
+    data : pd.DataFrame
+        Original data
+    
+    Returns:
+    --------
+    data_cstsum : pd.DataFrame
+        Manipulated data to which constant sum
+        constraint has been applied
+    """
+    
+    # Create copy of data to overcome mirroring issues
+    data_copy = data.copy()
+    # Apply constant sum constraint by renormalizing
+    data_cstsum = data_copy.divide(data_copy.sum(axis=1), axis=0)
+    
+    return data_cstsum
