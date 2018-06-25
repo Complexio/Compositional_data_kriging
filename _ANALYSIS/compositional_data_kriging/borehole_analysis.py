@@ -110,7 +110,7 @@ def combine_id_rows_complex(df, category, id_column, from_column, to_column):
         unique.append([hole_id, minimum, maximum, category])
 
         # Mind the transitions between layers and do not
-        # include them in the averageing?
+        # include them in the averaging?
         df_data_averaged = df_id.groupby("hole_id").mean().reset_index().\
             drop([from_column, to_column], axis=1)
         # print(df_data_averaged)
